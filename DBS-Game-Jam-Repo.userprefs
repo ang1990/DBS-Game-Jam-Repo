@@ -1,11 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\Disasters\Scripts\Tornado.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AngleChange.js">
     <Files>
-      <File FileName="Assets\AngleChange.js" Line="20" Column="2" />
-      <File FileName="Assets\Environment\Disasters\DisasterSpawner.js" Line="11" Column="1" />
-      <File FileName="Assets\Environment\GameController.js" Line="17" Column="49" />
-      <File FileName="Assets\Environment\Disasters\Scripts\Tornado.js" Line="49" Column="32" />
+      <File FileName="Assets\Environment\Disasters\Scripts\Tornado.js" Line="48" Column="52" />
+      <File FileName="Assets\AngleChange.js" Line="4" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
