@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AngleChange.js" />
      <Compile Include="Assets\Environment\Conditions\Ecosystem.js" />
      <Compile Include="Assets\Environment\Conditions\Population.js" />
      <Compile Include="Assets\Environment\Conditions\Temperature.js" />
