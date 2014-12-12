@@ -53,18 +53,19 @@ function addHealth(amount : float) {
 	}
 }
 
-// Override in children classes.
-function operateMachine() {}
-
 function reduceHealth(amount : float) {
 	if(amount > 0) {
 		health = Mathf.Max(0, health - amount);
 	}
 	if(health == 0) 
-		kill();
+		die();
 }
 
+
+// Override in children classes.
+function operateMachine() {}
+
 // Placeholder. Might have to update here or override depending on future implementation.
-function kill() {}
+function die() {}
 
 }

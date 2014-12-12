@@ -46,11 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Cameras\CameraControllers.js" />
+     <Compile Include="Assets\Environment\Conditions\Ecosystem.js" />
+     <Compile Include="Assets\Environment\Conditions\Population.js" />
+     <Compile Include="Assets\Environment\Conditions\Temperature.js" />
      <Compile Include="Assets\Machines\Scripts\EcoMachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MinerController.js" />
      <Compile Include="Assets\Machines\Scripts\TempMachineController.js" />
+     <Compile Include="Assets\Player\Scripts\PlayerResrouces.js" />
      <Compile Include="Assets\Scripts\CrossFadeExample.js" />
      <Compile Include="Assets\Scripts\CrossFadeProExample.js" />
      <Compile Include="Assets\Scripts\DreamWipeExample.js" />

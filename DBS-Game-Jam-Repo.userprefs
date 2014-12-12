@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Machines\Scripts\MachineController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\Conditions\Ecosystem.js">
     <Files>
-      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="32" Column="28" />
-      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="17" Column="1" />
-      <File FileName="Assets\Machines\Scripts\TempMachineController.js" Line="39" Column="1" />
-      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="13" Column="1" />
+      <File FileName="Assets\Environment\Conditions\Temperature.js" Line="17" Column="2" />
+      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="49" Column="1" />
+      <File FileName="Assets\Environment\Conditions\Ecosystem.js" Line="31" Column="2" />
+      <File FileName="Assets\Environment\Conditions\Population.js" Line="17" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
