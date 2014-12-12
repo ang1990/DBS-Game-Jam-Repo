@@ -6,7 +6,7 @@ private var timeSinceLastUpdate : float;
 var updateTime : float = 0.025;
 private var phase = TerraPhase.T1;
 
-var disasterSpawner : MonoBehaviour;
+var disasterSpawner : DisasterSpawner;
 
 var timeBetweenDisasters : float = 20;
 var timeSinceLastDisaster : float;
@@ -14,7 +14,7 @@ var chanceOfDisaster : float = 0.25;
 
 function Start () {
 	phase = TerraPhase.T1;
-	disasterSpawner = GetComponent(DisasterSpawner) as MonoBehaviour;
+	disasterSpawner = GetComponent(DisasterSpawner);
 }
 
 function Update () {
