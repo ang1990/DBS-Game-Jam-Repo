@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLogic.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\tempBar.js">
     <Files>
-      <File FileName="Assets\Scripts\GameLogic.js" Line="23" Column="2" />
+      <File FileName="Assets\Scripts\GameLogic.js" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\GUI\tempBar.js" Line="46" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,7 +1,5 @@
 
 var overviewCam : GameObject;
-var groundCam : GameObject;
-var resourceCam : GameObject;
 
 var cameras : GameObject[];
 var currentIndex : int;
@@ -13,8 +11,6 @@ private var swap = false;
  
 function Start() {
 	cameras[0] = overviewCam;
-	cameras[1] = groundCam;
-	cameras[2] = resourceCam;
 	for(var cam : GameObject in cameras) {
 		cam.camera.active = cam == overviewCam ? true : false;
 	}
