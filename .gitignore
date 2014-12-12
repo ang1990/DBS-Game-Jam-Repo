@@ -6,3 +6,5 @@ zed.userprefs
 Assembly-UnityScript-vs.unityproj
 Assembly-UnityScript.unityproj
 *.csproj
+Library/assetDatabase3
+Library/CurrentLayout.dwlt

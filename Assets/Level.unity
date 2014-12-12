@@ -246,7 +246,7 @@ GameObject:
   - 64: {fileID: 812975789}
   - 23: {fileID: 812975788}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Resources
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
