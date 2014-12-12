@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 4d0794b0ad1d34240869a7173a24f321
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cold Temp
+    21300002: Cold Temp_0
+    21300004: Cold Temp_1
+    21300006: Cold Temp_2
+    21300008: Cold Temp_3
+    21300010: Cold Temp_4
+    21300012: Cold Temp_5
+    21300014: Cold Temp_6
+    21300016: Cold Temp_7
+    21300018: Cold Temp_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cold Temp_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1192
+        width: 292
+        height: 379
+      alignment: 9
+      pivot: {x: .472981036, y: .368160516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1116
+        width: 287
+        height: 447
+      alignment: 9
+      pivot: {x: .380877674, y: .329383403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_2
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 916
+        width: 297
+        height: 652
+      alignment: 9
+      pivot: {x: .429162443, y: .169252172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_3
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 808
+        width: 284
+        height: 755
+      alignment: 9
+      pivot: {x: .4351798, y: .137742609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_4
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 782
+        width: 250
+        height: 778
+      alignment: 9
+      pivot: {x: .457922846, y: .161973178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 48
+        width: 297
+        height: 791
+      alignment: 9
+      pivot: {x: .43801704, y: .150904968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 37
+        width: 402
+        height: 805
+      alignment: 9
+      pivot: {x: .428039104, y: .130841061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 14
+        width: 361
+        height: 799
+      alignment: 9
+      pivot: {x: .427151084, y: .121485934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold Temp_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 19
+        width: 350
+        height: 747
+      alignment: 9
+      pivot: {x: .477458507, y: .162027359}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
