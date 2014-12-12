@@ -51,6 +51,7 @@
      <Compile Include="Assets\Environment\Conditions\Population.js" />
      <Compile Include="Assets\Environment\Conditions\Temperature.js" />
      <Compile Include="Assets\Environment\Disasters\DisasterSpawner.js" />
+     <Compile Include="Assets\Environment\Disasters\Scripts\Tornado.js" />
      <Compile Include="Assets\Environment\GameController.js" />
      <Compile Include="Assets\Machines\Scripts\EcoMachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MachineController.js" />
