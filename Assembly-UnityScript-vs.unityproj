@@ -39,14 +39,22 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity_Pro/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity_Pro/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Cameras\CameraControllers.js" />
+     <Compile Include="Assets\Environment\Conditions\Ecosystem.js" />
+     <Compile Include="Assets\Environment\Conditions\Population.js" />
+     <Compile Include="Assets\Environment\Conditions\Temperature.js" />
+     <Compile Include="Assets\Machines\Scripts\EcoMachineController.js" />
+     <Compile Include="Assets\Machines\Scripts\MachineController.js" />
+     <Compile Include="Assets\Machines\Scripts\MinerController.js" />
+     <Compile Include="Assets\Machines\Scripts\TempMachineController.js" />
+     <Compile Include="Assets\Player\Scripts\PlayerResrouces.js" />
      <Compile Include="Assets\Scripts\CrossFadeExample.js" />
      <Compile Include="Assets\Scripts\CrossFadeProExample.js" />
      <Compile Include="Assets\Scripts\DreamWipeExample.js" />
@@ -81,7 +89,7 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Owner/Desktop/DBS-Game-Jam-Repo/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Andika/Documents/GitHub/DBS-Game-Jam-Repo/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
