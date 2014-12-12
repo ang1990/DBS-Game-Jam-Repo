@@ -7,6 +7,8 @@ protected enum MachineState {Deploying, Operating, Dying};
 protected var maxHealth : float = 100;
 protected var health : float;
 
+protected var angle : float;
+
 protected var timeSinceLastUpdate : float;
 protected var updateTime : float = 0.025;
 
@@ -35,6 +37,14 @@ function Update () {
 			default: break;
 		}
 	}
+}
+
+function setAngle(val : float) {
+	angle = val;
+}
+
+function getAngle() : float {
+	return angle;
 }
 
 // Override!!!!
