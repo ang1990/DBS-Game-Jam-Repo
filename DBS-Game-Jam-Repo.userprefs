@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\tempBar.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\Disasters\DisasterSpawner.js">
     <Files>
-      <File FileName="Assets\Scripts\GameLogic.js" Line="16" Column="1" />
-      <File FileName="Assets\Scripts\GUI\tempBar.js" Line="46" Column="1" />
+      <File FileName="Assets\Environment\Conditions\Ecosystem.js" Line="20" Column="21" />
+      <File FileName="Assets\Environment\GameController.js" Line="30" Column="19" />
+      <File FileName="Assets\Environment\Disasters\DisasterSpawner.js" Line="8" Column="109" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

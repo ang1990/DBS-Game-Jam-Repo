@@ -12,8 +12,8 @@ var updateTime : float = 0.025;
 
 function Start () {
 	var temperature = gameObject.GetComponent(Temperature);
-	tempUpperBound = 0.6*temperature.maxTemp;
-	tempLowerBound = 0.4*temperature.minTemp;
+	tempUpperBound = 0.6*temperature.maxTemp + 0.4*temperature.minTemp;
+	tempLowerBound = 0.4*temperature.maxTemp + 0.6*temperature.minTemp;
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
 }
 

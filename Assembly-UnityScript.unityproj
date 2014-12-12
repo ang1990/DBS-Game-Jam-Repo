@@ -46,10 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Cameras\CameraControllers.js" />
      <Compile Include="Assets\Environment\Conditions\Ecosystem.js" />
      <Compile Include="Assets\Environment\Conditions\Population.js" />
      <Compile Include="Assets\Environment\Conditions\Temperature.js" />
+     <Compile Include="Assets\Environment\Disasters\DisasterSpawner.js" />
+     <Compile Include="Assets\Environment\GameController.js" />
      <Compile Include="Assets\Machines\Scripts\EcoMachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MinerController.js" />
