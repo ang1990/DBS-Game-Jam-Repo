@@ -3,6 +3,15 @@ guid: 6e354055d80de154bac718ca7511ede1
 TextureImporter:
   fileIDToRecycleName:
     21300000: Hot temp
+    21300002: Hot temp_0
+    21300004: Hot temp_1
+    21300006: Hot temp_2
+    21300008: Hot temp_3
+    21300010: Hot temp_4
+    21300012: Hot temp_5
+    21300014: Hot temp_6
+    21300016: Hot temp_7
+    21300018: Hot temp_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +52,96 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Hot temp_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1187
+        width: 316
+        height: 357
+      alignment: 9
+      pivot: {x: .516644716, y: .396868706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_1
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1134
+        width: 260
+        height: 405
+      alignment: 9
+      pivot: {x: .429196179, y: .311689824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_2
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 903
+        width: 311
+        height: 665
+      alignment: 9
+      pivot: {x: .432351261, y: .187581867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_3
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 808
+        width: 273
+        height: 752
+      alignment: 9
+      pivot: {x: .403668642, y: .136297435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_4
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 808
+        width: 235
+        height: 742
+      alignment: 9
+      pivot: {x: .376900673, y: .131395862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 35
+        width: 305
+        height: 881
+      alignment: 9
+      pivot: {x: .456887811, y: .147761494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_6
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 50
+        width: 350
+        height: 837
+      alignment: 9
+      pivot: {x: .492485881, y: .110392839}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_7
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 379
+        height: 805
+      alignment: 9
+      pivot: {x: .479182988, y: .134107873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot temp_8
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 0
+        width: 363
+        height: 768
+      alignment: 9
+      pivot: {x: .5, y: .181541681}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
