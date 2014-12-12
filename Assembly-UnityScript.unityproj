@@ -57,6 +57,7 @@
      <Compile Include="Assets\Machines\Scripts\MachineController.js" />
      <Compile Include="Assets\Machines\Scripts\MinerController.js" />
      <Compile Include="Assets\Machines\Scripts\TempMachineController.js" />
+     <Compile Include="Assets\Player\Scripts\Deployment.js" />
      <Compile Include="Assets\Player\Scripts\PlayerResrouces.js" />
      <Compile Include="Assets\Scripts\CrossFadeExample.js" />
      <Compile Include="Assets\Scripts\CrossFadeProExample.js" />

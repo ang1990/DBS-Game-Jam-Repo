@@ -32,8 +32,8 @@ function Update () {
 			updateVelocity();
 		}
 		updateAngle();
-		if(Time.timeSinceLevelLoad > timeSinceLastDamage + damageUpdateTime
-		dealDamage();
+		if(Time.timeSinceLevelLoad > timeSinceLastDamage + damageUpdateTime)
+			dealDamage();
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
 	}
 }
