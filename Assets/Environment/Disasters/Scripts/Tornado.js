@@ -17,6 +17,7 @@ var updateTime : float = 0.025;
 var timeSinceLastDamage : float;
 var damageUpdateTime : float = 0.5;
 
+var health : float;
 
 function Start () {
 	currentAngle = Random.Range(0,360);
@@ -32,9 +33,20 @@ function Update () {
 			updateVelocity();
 		}
 		updateAngle();
-		if(Time.timeSinceLevelLoad > timeSinceLastDamage + damageUpdateTime
-		dealDamage();
+		if(Time.timeSinceLevelLoad > timeSinceLastDamage + damageUpdateTime) {
+			dealDamage();
+			timeSinceLastDamage = Time.timeSinceLevelLoad;
+		}
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	}
+}
+
+function lowerHealth(amount : float) {
+	if (amount > 0)
+		health = Mathf.Max(0,health-amount);
+	if(health <= 0) {
+		// We need an animation of the tornado dying down
+		Destroy(gameObject);
 	}
 }
 
@@ -46,15 +58,23 @@ function updateAngle() {
 }
 
 function dealDamage() {
-	var machines : GameObject[] = FindGameObjectsWithTag("Machine");
+	var machines : GameObject[] = GameObject.FindGameObjectsWithTag("Machine");
 	for(var m : GameObject in machines) {
 		var mControl : MachineController = m.GetComponent(MachineController);
 		var machineAngle : float = mControl.getAngle();
 		if(angleIsWithinRange(machineAngle)) {
-			mControl.reduceHealth(damagePerSecond * (Time.timeSinceLastDamage - damageUpdateTime));
+			mControl.reduceHealth(damagePerSecond * (timeSinceLastDamage - damageUpdateTime));
 		}
 	}
 	return;
+}
+
+function angleIsWithinRange(angle : float) : boolean {
+	var difference : float = (angle - currentAngle)%360;
+	if(difference > 180)
+		return !(difference > (360 + damageWidth) || difference < (360 - damageWidth));
+	else
+		return !(difference > damageWidth || difference < -damageWidth);
 }
 
 function updateVelocity() {
