@@ -8,3 +8,8 @@ Assembly-UnityScript.unityproj
 *.csproj
 Library/assetDatabase3
 Library/CurrentLayout.dwlt
+Library/assetDatabase3
+Library/guidmapper
+*.userprefs
+Library/CurrentLayout.dwlt
+*.dwlt

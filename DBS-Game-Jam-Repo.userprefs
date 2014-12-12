@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLogic.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Machines\Scripts\MachineController.js">
     <Files>
-      <File FileName="Assets\Scripts\GameLogic.js" Line="23" Column="2" />
+      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="32" Column="28" />
+      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="17" Column="1" />
+      <File FileName="Assets\Machines\Scripts\TempMachineController.js" Line="39" Column="1" />
+      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
