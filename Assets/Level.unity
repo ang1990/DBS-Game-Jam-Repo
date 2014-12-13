@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &258164746
 Transform:
   m_ObjectHideFlags: 0
@@ -843,13 +843,21 @@ GameObject:
   - 20: {fileID: 782960829}
   - 92: {fileID: 782960828}
   - 124: {fileID: 782960827}
+  - 81: {fileID: 782960826}
   m_Layer: 0
-  m_Name: Overview Camera
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &782960826
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782960825}
+  m_Enabled: 1
 --- !u!124 &782960827
 Behaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +892,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1142,7 +1150,7 @@ MonoBehaviour:
   coldMachineCost: 0
   hotMachineCost: 0
   ecoMachineCost: 0
-  anchorTransform: {fileID: 0}
+  _anchor: {fileID: 0}
   playerResources: {fileID: 0}
 --- !u!114 &1332986469
 MonoBehaviour:

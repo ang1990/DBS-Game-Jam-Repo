@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  deploySound: {fileID: 0}
+  deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   moneyAmount: 20
   profitTime: 2
   playerResources: {fileID: 0}

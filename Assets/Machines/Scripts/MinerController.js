@@ -10,7 +10,7 @@ private var timeSinceLastMoney : float;
 var playerResources : PlayerResources;
 
 function setMachineVars() {
-	playerResources = GameObject.Find("mothersheep").GetComponent(PlayerResources);
+	playerResources = GameObject.Find("Mothersheep").GetComponent(PlayerResources);
 }
 
 function operateMachine() {
@@ -21,7 +21,7 @@ function operateMachine() {
 }
 
 private function addMoney(amount : int) {
-	playerResources.addMoney(amount);
+//	playerResources.addMoney(amount);
 }
 
 }

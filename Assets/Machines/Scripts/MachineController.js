@@ -9,8 +9,6 @@ protected var health : float;
 
 protected var angle : float;
 
-private var _transform : Transform;
-
 protected var timeSinceLastUpdate : float;
 protected var updateTime : float = 0.025;
 
@@ -29,8 +27,9 @@ function Start () {
 	deployTravelDist = 16.2;
 	state = MachineState.Deploying;
 	setMachineVars();
-	_transform = transform;
-	AudioSource.PlayClipAtPoint(deploySound, _transform.position);
+	animator = gameObject.GetComponent(Animator) as Animator;
+	animator.SetBool("mine", false);
+	AudioSource.PlayClipAtPoint(deploySound, transform.position);
 }
 
 function Update () {
@@ -38,9 +37,9 @@ function Update () {
 		switch(state) {
 			case MachineState.Deploying:
 				deploy();
-				if(_transform.localPosition.y < 50) {
+				if(transform.localPosition.y < 50) {
 					state = MachineState.Operating;
-					
+					animator.SetBool("mine", true);
 				}
 				break;
 			case MachineState.Operating:
@@ -68,7 +67,7 @@ function getAngle() : float {
 // Override!!!!
 function setMachineVars() {}
 function deploy() {
-	_transform.position.y -= (deployTravelDist / deployTime * (Time.timeSinceLevelLoad - timeSinceLastUpdate));
+	transform.localPosition.y -= (deployTravelDist / deployTime * (Time.timeSinceLevelLoad - timeSinceLastUpdate));
 	return;
 }
 
