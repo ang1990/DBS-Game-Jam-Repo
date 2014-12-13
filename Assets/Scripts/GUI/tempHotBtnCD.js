@@ -1,17 +1,27 @@
 ﻿#pragma strict
 
-private var minerBtnFront : GameObject;
+private var tempHotBtnCD : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
 private var MAX_TOP : float;
 private var MAX_BTM : float;
 private var height : float;
+private var MAX_CD : float;
+private var curCD : float;
+private var isOnCD : boolean;
+
+function SetOnCD() {
+	isOnCD = true;
+	if (curCD == 0.0f) {
+		curCD = MAX_CD;
+	}
+}
     
 function Start () {
-	minerBtnFront = GameObject.Find("minerBtnFront");
-	vertices = minerBtnFront.GetComponent(MeshFilter).mesh.vertices;
-	uv = minerBtnFront.GetComponent(MeshFilter).mesh.uv;
+	tempHotBtnCD = GameObject.Find("tempHotBtnCD");
+	vertices = tempHotBtnCD.GetComponent(MeshFilter).mesh.vertices;
+	uv = tempHotBtnCD.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
@@ -28,6 +38,10 @@ function Start () {
 	MAX_BTM = vertices[0].y;
 
 	height = Mathf.Abs(MAX_TOP - MAX_BTM);
+	
+	MAX_CD = 5.0f;
+	curCD = 0.0f;
+	isOnCD = false;
 }
 
 function Update () {
@@ -47,12 +61,16 @@ function Update () {
 	    i++;
 	}
 	
-	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
-		GameObject.Find("minerBtnCD").GetComponent(minerBtnCD).SetOnCD();
+	if (isOnCD) {
+		curCD -= Time.deltaTime;
+		if (curCD <= 0.0f) {
+			isOnCD = false;
+			curCD = 0.0f;
+		}
 	}
-		
-	vertices[1].y = MAX_BTM + height * 1.0f;
-	vertices[3].y = MAX_BTM + height * 1.0f;
+	
+	vertices[1].y = MAX_BTM + height * curCD / MAX_CD;
+	vertices[3].y = MAX_BTM + height * curCD / MAX_CD;
 
 	uv[1].y = 1.0f;
 	uv[3].y = 1.0f;
