@@ -580,7 +580,7 @@ MonoBehaviour:
   timeSinceLastUpdate: 0
   maxTime: 0
   timeLeft: 0
-  gameController: {fileID: 0}
+  gameController: {fileID: 1611560716}
 --- !u!23 &356663574
 Renderer:
   m_ObjectHideFlags: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
   timePassed: 0
   progress: 0
   initialXScale: 0
-  _transform: {fileID: 0}
+  _transform: {fileID: 516881788}
   timeSinceLastUpdate: 0
   timeBetweenUpdates: .0500000007
   oldX: 0
@@ -1554,6 +1554,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: .833999991
       objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
+      propertyPath: _transform
+      value: 
+      objectReference: {fileID: 516881788}
+    - target: {fileID: 11474680, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1611560716}
     m_RemovedComponents:
     - {fileID: 11474678, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
     - {fileID: 11474676, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
@@ -2644,6 +2652,7 @@ GameObject:
   - 114: {fileID: 1611560712}
   - 114: {fileID: 1611560711}
   - 114: {fileID: 1611560715}
+  - 114: {fileID: 1611560716}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -2728,6 +2737,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: 
   pauseMenuFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1611560716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611560710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5295d6cf962769468313c6c259fa021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateTime: .0250000004
+  timeLeft: 200
+  disasterSpawner: {fileID: 0}
+  timeBetweenDisasters: 20
+  timeSinceLastDisaster: 0
+  chanceOfDisaster: .25
+  temperature: {fileID: 0}
+  ecosystem: {fileID: 0}
+  population: {fileID: 0}
 --- !u!1 &1614113996
 GameObject:
   m_ObjectHideFlags: 0

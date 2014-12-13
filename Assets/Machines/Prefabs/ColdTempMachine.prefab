@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 67.5, z: 0}
+  m_LocalPosition: {x: 0, y: 64.8000031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -93,14 +93,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 196f6686c51aeee4a808a83501274dd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3149bc7c9153d6f468513abbaaa80569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
-  moneyAmount: 20
-  profitTime: 2
-  moneySound: {fileID: 8300000, guid: 26ad42a8766f42f4a8e9c2140193faa4, type: 3}
-  playerResources: {fileID: 0}
+  tempStrength: .5
+  optimalTemp: 50
+  temperature: {fileID: 0}
   animator: {fileID: 9500000}
 --- !u!212 &21200000
 SpriteRenderer:
