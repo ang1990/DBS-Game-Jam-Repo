@@ -46,9 +46,10 @@ function deployHotMachine() {
 	}
 }
 function deployEcoMachine() {
-	if(playerResources.getMoney() >= ecoMachineCost) {
-		playerResources.reduceMoney(ecoMachineCost);
-		Instantiate(ecoMachine, Vector3.zero, Quaternion.Euler(0,0,_anchor.eulerAngles.z));
-	}
+	if(GameObject.Find("Environment").GetComponent(GameController).ecoMachinesAvailable())
+		if(playerResources.getMoney() >= ecoMachineCost) {
+			playerResources.reduceMoney(ecoMachineCost);
+			Instantiate(ecoMachine, Vector3.zero, Quaternion.Euler(0,0,_anchor.eulerAngles.z));
+		}
 }
 

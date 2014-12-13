@@ -7,6 +7,8 @@ var optimalTemp : float = 50;
 
 var temperature : Temperature;
 
+var hissingSound : AudioClip;
+
 var animator : Animator;
 
 function setMachineVars() {
@@ -18,6 +20,7 @@ function deploy () {
 }
 
 function operateMachine() {
+	AudioSource.PlayClipAtPoint(hissingSound,transform.position);
 	animator.SetBool("heat", true);
 	raiseTemp(tempStrength * updateTime);
 }
