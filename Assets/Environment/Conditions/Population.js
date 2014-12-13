@@ -16,6 +16,10 @@ function getPop() : float {
 	return currentPop;
 }
 
+function getMaxPop() : float {
+	return maxPop;
+}
+
 function addPop(amount : float) {
 	if(amount > 0) {
 		currentPop = Mathf.Min(maxPop, currentPop + amount);

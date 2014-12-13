@@ -16,6 +16,11 @@ function setMachineVars() {
 	for (var i : int = 0; i < trees.Length; i++) {
 		treeControllers[i] = trees[i].GetComponent(TreeController) as TreeController;
 	}
+	GameObject.Find("Environment").GetComponent(Ecosystem).registerEcoMachine(gameObject);
+}
+
+function getEco() : float {
+	return currentEco;
 }
 
 function operateMachine() {
@@ -30,4 +35,9 @@ function addEco(amount : float) {
 						.setSize(Mathf.Min(1,currentEco - Mathf.CeilToInt(currentEco/ecoPerTree)/ecoPerTree));
 	}
 }
+
+function die() {
+	GameObject.Find("Environment").GetComponent(Ecosystem).deleteEcoMachine(gameObject);
+}
+
 }
