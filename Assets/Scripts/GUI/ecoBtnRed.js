@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var minerBtnRed : GameObject;
+private var ecoBtnRed : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
@@ -17,9 +17,9 @@ function setDisplay(_isDisplay : boolean) {
 }
 
 function Start () {
-	minerBtnRed = GameObject.Find("minerBtnRed");
-	vertices = minerBtnRed.GetComponent(MeshFilter).mesh.vertices;
-	uv = minerBtnRed.GetComponent(MeshFilter).mesh.uv;
+	ecoBtnRed = GameObject.Find("ecoBtnRed");
+	vertices = ecoBtnRed.GetComponent(MeshFilter).mesh.vertices;
+	uv = ecoBtnRed.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
@@ -34,7 +34,12 @@ function Start () {
 }
 
 function Update () {
-	if (!isDisplay) 
+
+	if (!GameObject.Find("Environment").GetComponent(GameController).ecoMachinesAvailable())
+	{
+		renderer.material.color.a = 1.0f;
+	}
+	else if (!isDisplay)
 	{
 		renderer.material.color.a = 0.0f;
 	}

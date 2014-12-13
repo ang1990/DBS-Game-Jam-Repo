@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\moneyDisplay.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\ecoBtnRed.js">
     <Files>
-      <File FileName="Assets\Scripts\GUI\goldDigit.js" Line="21" Column="5" />
-      <File FileName="Assets\moneyDisplay.js" Line="21" Column="15" />
+      <File FileName="Assets\Scripts\GUI\ecoBtnRed.js" Line="42" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

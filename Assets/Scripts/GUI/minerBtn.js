@@ -49,12 +49,15 @@ function Update () {
 	
 	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
 		if (!GameObject.Find("minerBtnCD").GetComponent(minerBtnCD).GetOnCD()) {
-			GameObject.Find("minerBtnCD").GetComponent(minerBtnCD).SetOnCD();
-			GameObject.Find("Mothersheep").GetComponent(Deployment).deployMiner();
-		}	
-		//if (GameObject.Find("Mothersheep").GetComponent(PlayerResources).getMoney() < 500) {
-			//GameObject.Find("minerBtnRed").GetComponent(minerBtnRed).Test();
-		//}
+			if (GameObject.Find("Mothersheep").GetComponent(PlayerResources).getMoney() < 500) {
+				// Show red outline
+				GameObject.Find("minerBtnRed").GetComponent(minerBtnRed).setDisplay(true);
+			}	
+			else {
+				GameObject.Find("minerBtnCD").GetComponent(minerBtnCD).SetOnCD();
+				GameObject.Find("Mothersheep").GetComponent(Deployment).deployMiner();
+			}		
+		}			
 	}
 		
 	vertices[1].y = MAX_BTM + height * 1.0f;

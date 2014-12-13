@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var minerBtnRed : GameObject;
+private var tempColdBtnRed : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
@@ -17,9 +17,9 @@ function setDisplay(_isDisplay : boolean) {
 }
 
 function Start () {
-	minerBtnRed = GameObject.Find("minerBtnRed");
-	vertices = minerBtnRed.GetComponent(MeshFilter).mesh.vertices;
-	uv = minerBtnRed.GetComponent(MeshFilter).mesh.uv;
+	tempColdBtnRed = GameObject.Find("tempColdBtnRed");
+	vertices = tempColdBtnRed.GetComponent(MeshFilter).mesh.vertices;
+	uv = tempColdBtnRed.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);

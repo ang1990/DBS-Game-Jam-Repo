@@ -28,7 +28,7 @@ class goldDigit extends MonoBehaviour {
 	function setNumber(val : int) {
 		var num = val;
 		
-		Debug.Log(MAX_BTM + " " + height);
+		//Debug.Log(MAX_BTM + " " + height);
 		vertices[1].y = MAX_BTM + height * 1.0f;
 		vertices[3].y = MAX_BTM + height * 1.0f;
 

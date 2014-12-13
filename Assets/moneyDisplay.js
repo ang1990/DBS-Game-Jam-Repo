@@ -17,7 +17,6 @@ class moneyDisplay extends goldDigit {
 		var dispNumber = no;
 		for (var i : int = 0; i < numArray.Length; i++) {
 			//numArray[i] = new goldDigit();
-			Debug.Log(i);
 			numArray[i].setNumber(dispNumber%10);
 			dispNumber /= 10;
 		}

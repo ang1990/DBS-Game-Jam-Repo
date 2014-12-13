@@ -4,16 +4,12 @@ private var minerBtnCD : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
-private var MAX_LEFT : float;
-private var MAX_RIGHT : float;
 private var MAX_TOP : float;
 private var MAX_BTM : float;
 private var height : float;
 private var MAX_CD : float;
 private var curCD : float;
 private var isOnCD : boolean;
-private var alertTime : float;
-private var maxAlertTime : float;
 
 function SetOnCD() {
 	isOnCD = true;
@@ -26,10 +22,6 @@ function GetOnCD() {
 	return isOnCD;
 }
 
-function AlertInsufficientFund() {
-	//renderer.material.mainTexture = Resources.Load("GUI/Textures/insufficientFund");
-}
-
 function Start () {
 	minerBtnCD = GameObject.Find("minerBtnCD");
 	vertices = minerBtnCD.GetComponent(MeshFilter).mesh.vertices;
@@ -38,15 +30,6 @@ function Start () {
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
     transform.localScale = new Vector3(transform.localScale.x * Cam.camera.aspect, transform.localScale.y, transform.localScale.z);
-
-	//Debug.Log(vertices[0].y + " " + vertices[1].y + " " + vertices[2].y + " " + vertices[3].y);
-	//MAX_LEFT = vertices[0].x;
-	//MAX_RIGHT = vertices[1].x;
-	
-	// TOP: 1, 3
-	// BTM: 0, 2
-	
-	maxAlertTime = 2.0;
 	
 	MAX_TOP = vertices[1].y;
 	MAX_BTM = vertices[0].y;

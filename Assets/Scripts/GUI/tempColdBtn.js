@@ -47,11 +47,17 @@ function Update () {
 	    i++;
 	}
 	
-	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {		
+	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
 		if (!GameObject.Find("tempColdBtnCD").GetComponent(tempColdBtnCD).GetOnCD()) {
-			GameObject.Find("tempColdBtnCD").GetComponent(tempColdBtnCD).SetOnCD();
-			GameObject.Find("Mothersheep").GetComponent(Deployment).deployColdMachine();
-		}	
+			if (GameObject.Find("Mothersheep").GetComponent(PlayerResources).getMoney() < 1500) {
+				// Show red outline
+				GameObject.Find("tempColdBtnRed").GetComponent(tempColdBtnRed).setDisplay(true);
+			}	
+			else {
+				GameObject.Find("tempColdBtnCD").GetComponent(tempColdBtnCD).SetOnCD();
+				GameObject.Find("Mothersheep").GetComponent(Deployment).deployColdMachine();
+			}		
+		}			
 	}
 		
 	vertices[1].y = MAX_BTM + height * 1.0f;
