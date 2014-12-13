@@ -1863,6 +1863,9 @@ MonoBehaviour:
   tempLowerBound: 0
   timeSinceLastUpdate: 0
   updateTime: .0250000004
+  upperLimit: .649999976
+  lowerLimit: .300000012
+  ecoMachinesList: []
 --- !u!114 &1611560713
 MonoBehaviour:
   m_ObjectHideFlags: 0
