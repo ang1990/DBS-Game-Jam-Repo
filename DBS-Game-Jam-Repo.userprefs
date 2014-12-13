@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Machines\Scripts\EcoMachineController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\tempBar.js">
     <Files>
-      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="23" Column="1" />
-      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="20" Column="1" />
+      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="32" Column="1" />
+      <File FileName="Assets\Scripts\GUI\tempIndicator.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\tempBar.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

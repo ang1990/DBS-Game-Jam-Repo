@@ -3,7 +3,7 @@
 class ColdTempMachineController extends MachineController {
 
 
-var tempStrength : float = 0.5;
+var tempStrength : float = 0.25;
 var optimalTemp : float = 50;
 
 var temperature : Temperature;
@@ -11,7 +11,8 @@ var temperature : Temperature;
 var animator : Animator;
 
 function setMachineVars() {
-	temperature = GameObject.Find("environment").GetComponent(Temperature);
+	temperature = GameObject.Find("Environment").GetComponent(Temperature);
+	animator = GetComponent(Animator);
 }
 
 function deploy () {
@@ -21,7 +22,7 @@ function deploy () {
 
 function operateMachine() {
 	animator.SetBool("cooling", true);
-			lowerTemp(tempStrength * updateTime);
+	lowerTemp(tempStrength * updateTime);
 	
 }
 

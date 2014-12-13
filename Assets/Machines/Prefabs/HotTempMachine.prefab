@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd224b615fc3a742a9d494fed068e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deploySound: {fileID: 0}
+  deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   tempStrength: .5
   optimalTemp: 50
   temperature: {fileID: 0}
