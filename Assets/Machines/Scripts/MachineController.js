@@ -48,7 +48,7 @@ function Update () {
 			case MachineState.Idling:
 				break;
 			case MachineState.Dying:
-				Destroy(gameObject);
+				die();
 				break;
 			default: break;
 		}

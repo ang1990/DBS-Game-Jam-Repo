@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+import System.Collections.Generic;
+
 var minEco : float = 0;
 var maxEco : float = 100;
 var currentEco : float = 0;
@@ -10,40 +12,47 @@ var tempLowerBound : float;
 var timeSinceLastUpdate : float;
 var updateTime : float = 0.025;
 
+var upperLimit : float = 0.65;
+var lowerLimit : float = 0.3;
+
+var ecoMachinesList : List.<EcoMachineController>;
+
 function Start () {
 	var temperature = gameObject.GetComponent(Temperature);
-	tempUpperBound = 0.6*temperature.maxTemp + 0.4*temperature.minTemp;
-	tempLowerBound = 0.4*temperature.maxTemp + 0.6*temperature.minTemp;
+	tempUpperBound = upperLimit*temperature.maxTemp + lowerLimit*temperature.minTemp;
+	tempLowerBound = lowerLimit*temperature.maxTemp + upperLimit*temperature.minTemp;
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	ecoMachinesList = new List.<EcoMachineController>();
 }
 
 function Update () {
 	if(Time.timeSinceLevelLoad > timeSinceLastUpdate + updateTime) {
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
-		reduceEco(calculateEcoLossRate());
 	}
 }
 
-// Don't forget about disasters!
+function registerEcoMachine(o : GameObject) {
+	for(var cont : EcoMachineController in ecoMachinesList) {
+		if(cont.gameObject == o) {
+			ecoMachinesList.Add(o.GetComponent(EcoMachineController));
+			break;	
+		}
+	}
+}
 
-function calculateEcoLossRate() : float {
-	var disasterCount : int = GameObject.FindGameObjectsWithTag("Disaster").Length;
-	
-	return 0;
+function deleteEcoMachine(o : GameObject) {
+	for(var cont : EcoMachineController in ecoMachinesList) {
+		if(cont.gameObject == o) {
+			ecoMachinesList.Remove(o.GetComponent(EcoMachineController));
+			break;
+		}
+	}
 }
 
 function getEco() : float {
-	return currentEco;
-}
-
-function addEco(amount : float) {
-	if(amount > 0) {
-		currentEco = Mathf.Min(maxEco, currentEco + amount);
+	var sumEco : float = 0;
+	for (var cont : EcoMachineController in ecoMachinesList) {
+		sumEco += cont.getEco();
 	}
-}
-
-function reduceEco(amount : float) {
-	if(amount > 0) {
-		currentEco = Mathf.Max(minEco, currentEco - amount);
-	}
+	return sumEco;
 }

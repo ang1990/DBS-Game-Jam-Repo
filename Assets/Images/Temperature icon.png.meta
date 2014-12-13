@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: 9c5ef3ad0b348d245900bfe34f97ef00
+guid: af6d47ef0f8be304fa750d697c735cd4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Cold Button
-    21300002: Cold button
+    21300000: Temperature icon
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

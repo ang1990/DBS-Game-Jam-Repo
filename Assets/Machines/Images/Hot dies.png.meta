@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 91179024e935e9049886c4e1513178d3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hot dies
+    21300002: Hot dies_0
+    21300004: Hot dies_1
+    21300006: Hot dies_2
+    21300008: Hot dies_3
+    21300010: Hot dies_4
+    21300012: Hot dies_5
+    21300014: Hot dies_6
+    21300016: Hot dies_7
+    21300018: Hot dies_8
+    21300020: Hot dies_9
+    21300022: Hot dies_10
+    21300024: Hot dies_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hot dies_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1997
+        width: 296
+        height: 323
+      alignment: 9
+      pivot: {x: .539980888, y: .194676831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_1
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2005
+        width: 304
+        height: 327
+      alignment: 9
+      pivot: {x: .409166038, y: .186348736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_2
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1993
+        width: 327
+        height: 308
+      alignment: 9
+      pivot: {x: .403491467, y: .320692182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_3
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1922
+        width: 261
+        height: 426
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1279
+        width: 300
+        height: 682
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_5
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1196
+        width: 295
+        height: 765
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_6
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1326
+        width: 284
+        height: 651
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_7
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1307
+        width: 264
+        height: 607
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 529
+        width: 272
+        height: 596
+      alignment: 9
+      pivot: {x: .485496968, y: .122731462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 541
+        width: 391
+        height: 655
+      alignment: 9
+      pivot: {x: .500000298, y: .18080458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_10
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 667
+        width: 383
+        height: 643
+      alignment: 9
+      pivot: {x: .520599604, y: .162577718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hot dies_11
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 667
+        width: 343
+        height: 636
+      alignment: 9
+      pivot: {x: .5, y: .134053931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
