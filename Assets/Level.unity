@@ -1103,6 +1103,7 @@ GameObject:
   - 4: {fileID: 1332986466}
   - 212: {fileID: 1332986465}
   - 114: {fileID: 1332986467}
+  - 114: {fileID: 1332986468}
   m_Layer: 0
   m_Name: Mothersheep
   m_TagString: Untagged
@@ -1164,6 +1165,18 @@ MonoBehaviour:
   temperature: {fileID: 0}
   ecosystem: {fileID: 0}
   population: {fileID: 0}
+--- !u!114 &1332986468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332986464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866c1c0e7f3672f43967cd758a0a7558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
 --- !u!1 &1516180780
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,6 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTemp: 0
+  deltaTemp: 0
   minTemp: 0
   maxTemp: 100
 --- !u!4 &1611560714

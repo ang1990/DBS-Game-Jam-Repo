@@ -6,17 +6,17 @@ enum TempMode {Raise, Lower};
 
 var tempStrength : float = 0.5;
 var optimalTemp : float = 50;
-var currentTemp : float;
+
+var temperature : Temperature;
 
 private var mode : TempMode;
 
 function setMachineVars() {
 	mode = TempMode.Raise;
-	currentTemp = 100;
+	temperature = GameObject.Find("environment").GetComponent(Temperature);
 }
 
 function operateMachine() {
-	mode = currentTemp > optimalTemp ? TempMode.Lower : TempMode.Raise;
 	switch(mode) {
 		case TempMode.Raise :
 			raiseTemp(tempStrength * updateTime);
@@ -31,9 +31,11 @@ function operateMachine() {
 }
 
 function raiseTemp(amount : float) {
+	temperature.addTemp(amount);
 }
 
 function lowerTemp(amount : float) {
+	temperature.reduceTemp(amount);
 }
 
 
