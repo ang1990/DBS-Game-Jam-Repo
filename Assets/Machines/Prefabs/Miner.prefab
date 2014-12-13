@@ -100,6 +100,7 @@ MonoBehaviour:
   moneyAmount: 25
   profitTime: 1
   moneySound: {fileID: 8300000, guid: 26ad42a8766f42f4a8e9c2140193faa4, type: 3}
+  drillSound: {fileID: 8300000, guid: 078e26edf19a03946ae2ec57fb3dd1c4, type: 3}
   playerResources: {fileID: 0}
   animator: {fileID: 9500000}
 --- !u!212 &21200000

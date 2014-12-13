@@ -61,6 +61,7 @@ function Update () {
 	handleDisasterSpawning();
 	
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	
 }
 
 function getTimeLeft() : float {

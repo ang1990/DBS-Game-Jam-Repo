@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\tempBar.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\moneyDisplay.js">
     <Files>
-      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="32" Column="1" />
-      <File FileName="Assets\Scripts\GUI\tempIndicator.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\tempBar.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUI\goldDigit.js" Line="21" Column="5" />
+      <File FileName="Assets\moneyDisplay.js" Line="21" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
