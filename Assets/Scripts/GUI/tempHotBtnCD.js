@@ -17,6 +17,10 @@ function SetOnCD() {
 		curCD = MAX_CD;
 	}
 }
+
+function GetOnCD() {
+	return isOnCD;
+}
     
 function Start () {
 	tempHotBtnCD = GameObject.Find("tempHotBtnCD");

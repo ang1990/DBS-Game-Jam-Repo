@@ -48,7 +48,10 @@ function Update () {
 	}
 	
 	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
-		GameObject.Find("tempHotBtnCD").GetComponent(tempHotBtnCD).SetOnCD();
+		if (!GameObject.Find("tempHotBtnCD").GetComponent(tempHotBtnCD).GetOnCD()) {
+			GameObject.Find("tempHotBtnCD").GetComponent(tempHotBtnCD).SetOnCD();
+			GameObject.Find("Mothersheep").GetComponent(Deployment).deployHotMachine();
+		}
 	}
 		
 	vertices[1].y = MAX_BTM + height * 1.0f;

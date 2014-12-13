@@ -19,6 +19,10 @@ function SetOnCD() {
 		curCD = MAX_CD;
 	}
 }
+
+function GetOnCD() {
+	return isOnCD;
+}
 	
 function Start () {
 	ecoBtnCD = GameObject.Find("ecoBtnCD");

@@ -46,9 +46,12 @@ function Update () {
 	    }
 	    i++;
 	}
-	
+
 	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
-		GameObject.Find("ecoBtnCD").GetComponent(ecoBtnCD).SetOnCD();
+		if (!GameObject.Find("ecoBtnCD").GetComponent(ecoBtnCD).GetOnCD()) {
+			GameObject.Find("ecoBtnCD").GetComponent(ecoBtnCD).SetOnCD();
+			GameObject.Find("Mothersheep").GetComponent(Deployment).deployEcoMachine();
+		}
 	}
 		
 	vertices[1].y = MAX_BTM + height * 1.0f;
