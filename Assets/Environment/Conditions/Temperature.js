@@ -16,6 +16,10 @@ function getTemp() : float {
 	return currentTemp;
 }
 
+function getTempPercent() : float {
+	return (currentTemp - minTemp) / (maxTemp - minTemp);
+}
+
 function addTemp(amount : float) {
 	if(amount > 0) {
 		currentTemp = Mathf.Min(maxTemp, currentTemp + amount);
