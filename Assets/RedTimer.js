@@ -8,20 +8,20 @@ var progress : float;
 var initialXScale : float;
 var _transform : Transform;
 
+var timeSinceLastUpdate : float;
+var timeBetweenUpdates : float = 0.04;
+
 var oldX : float;
 var newX : float;
-
-var timeBetweenUpdates : float = 0.05;
-var timeSinceLastUpdate : float;
-
 function Start() {
 	initialXScale = transform.localScale.x;
 	gameController = GameObject.Find("Environment").GetComponent(GameController);
-	maxTime = 10; //gameController.getTimeLeft();
+	maxTime = gameController.getTimeLeft();
 	timePassed = 0;
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
 	_transform = transform;
 	oldX = _transform.position.x;
+	yield WaitForEndOfFrame();
 	newX = _transform.position.x + renderer.bounds.size.x/2.05;
 }
 
@@ -31,7 +31,6 @@ function Update() {
 			timePassed += Time.timeSinceLevelLoad - timeSinceLastUpdate;
 			progress = timePassed / maxTime;
 			if(progress > 1) progress = 1;
-			Debug.Log(progress);
 			// Decrease X scale by a fraction determined by the time elapsed.
 			_transform.localScale.x = (1 - progress)*initialXScale;
 			// Move X scale by a part of both the inital X and final X determined by the time elapsed.

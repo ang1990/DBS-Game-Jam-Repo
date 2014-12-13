@@ -15,7 +15,7 @@ function Start () {
 	XDistTravel = (GameObject.Find("redTimer").renderer.bounds.size.x)*0.85;
 	initialX = (XDistTravel*-0.52);
 	gameController = GameObject.Find("Environment").GetComponent(GameController);
-	maxTime = 10;// gameController.getTimeLeft();
+	maxTime = gameController.getTimeLeft();
 	timeLeft = maxTime;
 }
 
