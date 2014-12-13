@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Meteorite.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\Disasters\DisasterSpawner.js">
     <Files>
-      <File FileName="Assets\UnitSelector.js" Line="53" Column="26" />
-      <File FileName="Assets\Environment\Disasters\Scripts\Tornado.js" Line="1" Column="1" />
-      <File FileName="Assets\Meteorite.js" Line="18" Column="1" />
+      <File FileName="Assets\Environment\GameController.js" Line="74" Column="42" />
+      <File FileName="Assets\AngleChange.js" Line="1" Column="1" />
+      <File FileName="Assets\Environment\Disasters\DisasterSpawner.js" Line="11" Column="2" />
+      <File FileName="Assets\Player\Scripts\Deployment.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
