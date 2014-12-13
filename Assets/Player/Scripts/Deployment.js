@@ -1,23 +1,46 @@
 ﻿#pragma strict
 
-var MinerPrefab : GameObject;
-var EcoPrefab : GameObject;
-var HeatPrefab : GameObject;
-var ColdPrefab : GameObject;
+var miner : GameObject;
+var coldMachine : GameObject;
+var hotMachine : GameObject;
+var ecoMachine : GameObject;
 
-var _anchor : Transform;
+var minerCost : int;
+var coldMachineCost : int;
+var hotMachineCost : int;
+var ecoMachineCost : int;
 
-function Start () {
-	_anchor = transform.parent;
+var playerResources : PlayerResources;
+
+function Start() {
+	playerResources = GameObject.Find("mothersheep").GetComponent(PlayerResources);
 }
 
-function Update () {
-	
-	if(Input.GetKeyDown("v")) {
-		Deployment (MinerPrefab);
+function deployMiner() {
+	if(playerResources.getMoney() >= minerCost) {
+		playerResources.reduceMoney(minerCost);
+		Instantiate(miner);
 	}
 }
 
-function Deployment  (prefab : GameObject) {
-	Instantiate (prefab, Vector3(0,0,0),Quaternion.Euler(0,0,_anchor.eulerAngles.z));
+function deployColdMachine() {
+	if(playerResources.getMoney() >= coldMachineCost) {
+		playerResources.reduceMoney(coldMachineCost);
+		Instantiate(coldMachine);
+	}
 }
+
+function deployHotMachine() {
+	if(playerResources.getMoney() >= hotMachineCost) {
+		playerResources.reduceMoney(hotMachineCost);
+		Instantiate(hotMachine);
+	}
+}
+function deployEcoMachine() {
+	if(playerResources.getMoney() >= ecoMachineCost) {
+		playerResources.reduceMoney(ecoMachineCost);
+		Instantiate(ecoMachine);
+	}
+}
+
+>>>>>>> origin/master

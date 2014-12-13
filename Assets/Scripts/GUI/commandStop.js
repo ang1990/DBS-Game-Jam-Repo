@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var minerBtnFront : GameObject;
+private var commandStop : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
@@ -9,9 +9,9 @@ private var MAX_BTM : float;
 private var height : float;
     
 function Start () {
-	minerBtnFront = GameObject.Find("minerBtnFront");
-	vertices = minerBtnFront.GetComponent(MeshFilter).mesh.vertices;
-	uv = minerBtnFront.GetComponent(MeshFilter).mesh.uv;
+	commandStop = GameObject.Find("commandStop");
+	vertices = commandStop.GetComponent(MeshFilter).mesh.vertices;
+	uv = commandStop.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
@@ -48,9 +48,9 @@ function Update () {
 	}
 	
 	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
-		GameObject.Find("minerBtnCD").GetComponent(minerBtnCD).SetOnCD();
+		Debug.Log("Clicked stop");
 	}
-		
+	
 	vertices[1].y = MAX_BTM + height * 1.0f;
 	vertices[3].y = MAX_BTM + height * 1.0f;
 
