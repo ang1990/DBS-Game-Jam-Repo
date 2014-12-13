@@ -7,6 +7,8 @@ var moneyAmount : int = 20;
 var profitTime : float = 2;
 private var timeSinceLastMoney : float;
 
+var moneySound : AudioClip;
+
 var playerResources : PlayerResources;
 
 function setMachineVars() {
@@ -15,6 +17,7 @@ function setMachineVars() {
 
 function operateMachine() {
 	if(Time.timeSinceLevelLoad > timeSinceLastMoney + profitTime) {
+		AudioSource.PlayClipAtPoint(moneySound, transform.position);
 		addMoney(moneyAmount);
 		timeSinceLastMoney = Time.timeSinceLevelLoad;
 	}

@@ -9,7 +9,7 @@ var updateTime : float = 0.025;
 private var phase : TerraPhase;
 private var gameState : GameState;
 
-var timeLeft : float;
+var timeLeft : float = 200;
 
 var disasterSpawner : DisasterSpawner;
 
@@ -64,6 +64,9 @@ function Update () {
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
 }
 
+function getTimeLeft() : float {
+	return timeLeft;
+}
 
 function handleDisasterSpawning() {
 	if(Time.timeSinceLevelLoad > timeSinceLastDisaster + timeBetweenDisasters) {

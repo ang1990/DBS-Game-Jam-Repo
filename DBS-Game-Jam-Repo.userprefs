@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\GameController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RedTimer.js">
     <Files>
-      <File FileName="Assets\Environment\GameController.js" Line="31" Column="11" />
+      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="20" Column="32" />
+      <File FileName="Assets\Environment\GameController.js" Line="68" Column="18" />
+      <File FileName="Assets\RedTimer.js" Line="33" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
