@@ -533,50 +533,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1025432478}
   m_GameObject: {fileID: 258164745}
   m_Mesh: {fileID: 4300000, guid: 20b147109abb42842882687e769ff765, type: 3}
---- !u!1001 &330049568
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  m_RootGameObject: {fileID: 526700314}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &363984589
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,39 +855,23 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11423668, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
+      propertyPath: coldMachine
+      value: 
+      objectReference: {fileID: 100000, guid: 699afc72f75f1314198ef62fcc804748, type: 2}
+    - target: {fileID: 11423668, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
+      propertyPath: hotMachine
+      value: 
+      objectReference: {fileID: 100000, guid: 3d66aa9b146aab74d965784dccef9f82, type: 2}
+    - target: {fileID: 11423668, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
+      propertyPath: ecoMachine
+      value: 
+      objectReference: {fileID: 100000, guid: 87e57d401af7d8447a5bebfd9ac50724, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
   m_RootGameObject: {fileID: 1332986464}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &526700314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 526700315}
-  m_Layer: 0
-  m_Name: Miner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &526700315
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  m_GameObject: {fileID: 526700314}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1576431678}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
 --- !u!1 &538374342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,6 +1822,7 @@ GameObject:
   - 114: {fileID: 1332986467}
   - 114: {fileID: 1332986468}
   - 114: {fileID: 1332986469}
+  - 95: {fileID: 1332986470}
   m_Layer: 0
   m_Name: Mothersheep
   m_TagString: Untagged
@@ -1956,9 +1897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miner: {fileID: 100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  coldMachine: {fileID: 0}
-  hotMachine: {fileID: 0}
-  ecoMachine: {fileID: 0}
+  coldMachine: {fileID: 100000, guid: 699afc72f75f1314198ef62fcc804748, type: 2}
+  hotMachine: {fileID: 100000, guid: 3d66aa9b146aab74d965784dccef9f82, type: 2}
+  ecoMachine: {fileID: 100000, guid: 87e57d401af7d8447a5bebfd9ac50724, type: 2}
   minerCost: 500
   coldMachineCost: 1500
   hotMachineCost: 1500
@@ -1978,6 +1919,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 0
+--- !u!95 &1332986470
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 11e6e9cb3f996f246b21bc77047f0b1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 466747750}
+  m_GameObject: {fileID: 1332986464}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99032fa9bf1e6104a964c214ef2d52bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1426775876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,93 +2301,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1025432478}
   m_GameObject: {fileID: 1549201780}
   m_Mesh: {fileID: 4300000, guid: 20b147109abb42842882687e769ff765, type: 3}
---- !u!1 &1576431677
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1576431678}
-  - 212: {fileID: 1576431681}
-  - 95: {fileID: 1576431680}
-  - 114: {fileID: 1576431679}
-  m_Layer: 0
-  m_Name: Body
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1576431678
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  m_GameObject: {fileID: 1576431677}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 66, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 526700315}
-  m_RootOrder: 0
---- !u!114 &1576431679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11406008, guid: 979017d57d74d9d46b2c546ebd471bfb,
-    type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  m_GameObject: {fileID: 1576431677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55ba77d24d8564c49b2f2055f0e19792, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
-  moneyAmount: 25
-  profitTime: 1
-  moneySound: {fileID: 8300000, guid: 26ad42a8766f42f4a8e9c2140193faa4, type: 3}
-  playerResources: {fileID: 0}
---- !u!95 &1576431680
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 979017d57d74d9d46b2c546ebd471bfb,
-    type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  m_GameObject: {fileID: 1576431677}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8c7adf03e7c385d4ab3833049f95c915, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &1576431681
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200000, guid: 979017d57d74d9d46b2c546ebd471bfb,
-    type: 2}
-  m_PrefabInternal: {fileID: 330049568}
-  m_GameObject: {fileID: 1576431677}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 38a59f48768493e479f1b26891e45950, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1611560710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +2848,7 @@ MonoBehaviour:
   currentSpeed: 0
   mothersheep: {fileID: 1332986466}
   deceleration: 45
+  _animator: {fileID: 0}
 --- !u!4 &1966441443
 Transform:
   m_ObjectHideFlags: 0

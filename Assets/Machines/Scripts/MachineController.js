@@ -17,7 +17,7 @@ protected var state : MachineState;
 protected var deployTime : float = 1;
 protected var deployTravelDist : float;
 
-var animator : Animator;
+//var animator : Animator;
 
 var deploySound : AudioClip;
 
@@ -27,8 +27,8 @@ function Start () {
 	deployTravelDist = 16.2;
 	state = MachineState.Deploying;
 	setMachineVars();
-	animator = gameObject.GetComponent(Animator) as Animator;
-	animator.SetBool("mine", false);
+	//animator = gameObject.GetComponent(Animator) as Animator;
+	//animator.SetBool("mine", false);
 	AudioSource.PlayClipAtPoint(deploySound, transform.position);
 }
 
@@ -39,7 +39,6 @@ function Update () {
 				deploy();
 				if(transform.localPosition.y < 50) {
 					state = MachineState.Operating;
-					animator.SetBool("mine", true);
 				}
 				break;
 			case MachineState.Operating:
@@ -66,10 +65,7 @@ function getAngle() : float {
 
 // Override!!!!
 function setMachineVars() {}
-function deploy() {
-	transform.localPosition.y -= (deployTravelDist / deployTime * (Time.timeSinceLevelLoad - timeSinceLastUpdate));
-	return;
-}
+
 
 function getHealth() : float {
 	return health;
@@ -91,6 +87,8 @@ function reduceHealth(amount : float) {
 
 
 // Override in children classes.
+function deploy() {}
+
 function operateMachine() {}
 
 // Placeholder. Might have to update here or override depending on future implementation.
