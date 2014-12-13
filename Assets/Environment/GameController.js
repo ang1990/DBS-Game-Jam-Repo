@@ -6,6 +6,8 @@ private var timeSinceLastUpdate : float;
 var updateTime : float = 0.025;
 private var phase = TerraPhase.T1;
 
+var timeLeft : float;
+
 var disasterSpawner : DisasterSpawner;
 
 var timeBetweenDisasters : float = 20;
@@ -15,17 +17,17 @@ var chanceOfDisaster : float = 0.25;
 function Start () {
 	phase = TerraPhase.T1;
 	disasterSpawner = GetComponent(DisasterSpawner);
+	timeLeft = 200;
 }
 
 function Update () {
 	if(Time.timeSinceLevelLoad > timeSinceLastUpdate + updateTime) {
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
+		timeLeft -= (Time.timeSinceLevelLoad - timeSinceLastUpdate);
 		switch(phase) {
 			case TerraPhase.T1 :
 				break;
 			case TerraPhase.T2 :
-				break;
-			case TerraPhase.T3 :
 				break;
 			default: break;
 			}
