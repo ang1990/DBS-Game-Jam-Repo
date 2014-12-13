@@ -86,8 +86,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
-  moneyAmount: 20
-  profitTime: 2
+  moneyAmount: 25
+  profitTime: 1
   moneySound: {fileID: 8300000, guid: 26ad42a8766f42f4a8e9c2140193faa4, type: 3}
   playerResources: {fileID: 0}
 --- !u!212 &21200000
