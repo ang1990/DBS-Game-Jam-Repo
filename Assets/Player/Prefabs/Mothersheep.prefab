@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11437732}
   - 114: {fileID: 11423668}
   - 114: {fileID: 11423670}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: Mothersheep
   m_TagString: Untagged
@@ -31,6 +32,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142958}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99032fa9bf1e6104a964c214ef2d52bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11423668
 MonoBehaviour:
   m_ObjectHideFlags: 1
