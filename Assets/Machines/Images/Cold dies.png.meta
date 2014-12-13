@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 2439aafbbabbd904ea580c270f26778c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cold dies
+    21300002: Cold dies_0
+    21300004: Cold dies_1
+    21300006: Cold dies_2
+    21300008: Cold dies_3
+    21300010: Cold dies_7
+    21300012: Cold dies_11
+    21300014: Cold dies_10
+    21300016: Cold dies_9
+    21300018: Cold dies_8
+    21300020: Cold dies_4
+    21300022: Cold dies_5
+    21300024: Cold dies_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Cold dies_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1989
+        width: 305
+        height: 265
+      alignment: 9
+      pivot: {x: .486634046, y: .234635264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1986
+        width: 295
+        height: 313
+      alignment: 9
+      pivot: {x: .389447749, y: .379524797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1960
+        width: 313
+        height: 344
+      alignment: 9
+      pivot: {x: .542328954, y: .227435797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_3
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1898
+        width: 250
+        height: 439
+      alignment: 9
+      pivot: {x: .516306639, y: .0751597211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_7
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1306
+        width: 271
+        height: 582
+      alignment: 9
+      pivot: {x: .537606657, y: .0517130308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_11
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 813
+        width: 365
+        height: 500
+      alignment: 9
+      pivot: {x: .527199924, y: -.284644395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_10
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 785
+        width: 368
+        height: 521
+      alignment: 9
+      pivot: {x: .503127694, y: -.135921657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 793
+        width: 403
+        height: 400
+      alignment: 9
+      pivot: {x: .527491093, y: -.335868388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_8
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 895
+        width: 226
+        height: 215
+      alignment: 9
+      pivot: {x: .541169107, y: -1.08861649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1254
+        width: 245
+        height: 691
+      alignment: 9
+      pivot: {x: .404324472, y: .0767050236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_5
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1206
+        width: 276
+        height: 739
+      alignment: 9
+      pivot: {x: .566466391, y: .0724799931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Cold dies_6
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1331
+        width: 302
+        height: 610
+      alignment: 9
+      pivot: {x: .55736959, y: .0372045301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
