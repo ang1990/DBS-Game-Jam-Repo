@@ -1,13 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FailEvent.js">
     <Files>
-      <File FileName="Assets\Environment\Conditions\Temperature.js" Line="11" Column="20" />
+      <File FileName="Assets\Environment\Conditions\Temperature.js" Line="1" Column="1" />
       <File FileName="Assets\Environment\GameController.js" Line="1" Column="1" />
       <File FileName="Assets\Environment\Disasters\DisasterSpawner.js" Line="1" Column="1" />
       <File FileName="Assets\Environment\Disasters\Scripts\Tornado.js" Line="1" Column="1" />
       <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="1" Column="1" />
-      <File FileName="Assets\FailEvent.js" Line="1" Column="1" />
+      <File FileName="Assets\FailEvent.js" Line="6" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
