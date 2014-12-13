@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Machines\Scripts\MinerController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\ecoBtn.js">
     <Files>
-      <File FileName="Assets\Player\Scripts\Deployment.js" Line="17" Column="19" />
-      <File FileName="Assets\AngleChange.js" Line="35" Column="2" />
+      <File FileName="Assets\Scripts\GUI\ecoBtn.js" Line="3" Column="8" />
+      <File FileName="Assets\Player\Scripts\Deployment.js" Line="1" Column="1" />
+      <File FileName="Assets\AngleChange.js" Line="1" Column="1" />
       <File FileName="Assets\Environment\Disasters\Scripts\Tornado.js" Line="1" Column="1" />
-      <File FileName="Assets\MinerBehaviour.js" Line="27" Column="2" />
-      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="42" Column="37" />
-      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="13" Column="38" />
+      <File FileName="Assets\MinerBehaviour.js" Line="1" Column="1" />
+      <File FileName="Assets\Machines\Scripts\MachineController.js" Line="1" Column="1" />
+      <File FileName="Assets\Machines\Scripts\MinerController.js" Line="13" Column="81" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
