@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-enum TerraPhase {T1, T2, T3};
+enum TerraPhase {T1, T2};
 
 enum GameState {Playing, Victory, Defeat};
 
@@ -21,6 +21,8 @@ var temperature : Temperature;
 var ecosystem : Ecosystem;
 var population : Population;
 
+var ecoMachinesAllowed : boolean = false;
+
 function Start () {
 	phase = TerraPhase.T1;
 	disasterSpawner = GetComponent(DisasterSpawner);
@@ -29,6 +31,7 @@ function Start () {
 	temperature = GetComponent(Temperature);
 	ecosystem = GetComponent(Ecosystem);
 	population = GetComponent(Population);
+	ecoMachinesAllowed = false;
 }
 
 function Update () {
@@ -41,7 +44,10 @@ function Update () {
 			gameState = GameState.Victory;
 		switch(phase) {
 			case TerraPhase.T1 :
-			// This phase only allows Miners and Hot/Cold Machines.
+				if(temperature.getTempPercent() > 0.35 && temperature.getTempPercent() < 0.65) {
+					phase = TerraPhase.T2;
+					ecoMachinesAllowed = true;
+				}
 				break;
 			case TerraPhase.T2 :
 			// This phase allows Eco Machines as well.
@@ -61,6 +67,10 @@ function Update () {
 	handleDisasterSpawning();
 	
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
+}
+
+function ecoMachinesAvailable() : boolean {
+	return ecoMachinesAllowed;
 }
 
 function getTimeLeft() : float {

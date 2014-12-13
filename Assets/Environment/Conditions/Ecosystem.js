@@ -31,28 +31,23 @@ function Update () {
 	}
 }
 
-function registerEcoMachine(o : GameObject) {
-	for(var cont : EcoMachineController in ecoMachinesList) {
-		if(cont.gameObject == o) {
-			ecoMachinesList.Add(o.GetComponent(EcoMachineController));
-			break;	
-		}
+function getEcoPercentage() : float {
+	return currentEco / maxEco;
+}
+
+
+function addEco(amount : float) {
+	if(amount > 0) {
+		currentEco = Mathf.Min(maxEco, currentEco+amount);
 	}
 }
 
-function deleteEcoMachine(o : GameObject) {
-	for(var cont : EcoMachineController in ecoMachinesList) {
-		if(cont.gameObject == o) {
-			ecoMachinesList.Remove(o.GetComponent(EcoMachineController));
-			break;
-		}
+function reduceEco(amount : float) {
+	if(amount > 0) {
+		currentEco = Mathf.Max(minEco, currentEco - amount);
 	}
 }
 
 function getEco() : float {
-	var sumEco : float = 0;
-	for (var cont : EcoMachineController in ecoMachinesList) {
-		sumEco += cont.getEco();
-	}
-	return sumEco;
+	return currentEco;
 }

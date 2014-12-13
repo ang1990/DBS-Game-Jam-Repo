@@ -88,6 +88,7 @@ MonoBehaviour:
   tempStrength: .5
   optimalTemp: 50
   temperature: {fileID: 0}
+  hissingSound: {fileID: 8300000, guid: 4257d34eb2831db48b39b44c98bbe42f, type: 3}
   animator: {fileID: 9500000}
 --- !u!212 &21200000
 SpriteRenderer:

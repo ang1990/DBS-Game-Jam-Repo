@@ -25,6 +25,11 @@ function Update () {
 		temperature.reduceTemp(tempDeltaRate*Time.deltaTime);
 		Debug.Log("Temperature = " + temperature.getTemp());
 	}
+	if(Input.GetKey("x")) {
+		ecosystem.addEco(ecoDeltaRate*Time.deltaTime);
+		Debug.Log("Ecosystem = " +ecosystem.getEco());
+	}
+	
 	if(Input.GetKey("p")) {
 		population.addPop(popDeltaRate*Time.deltaTime);
 	}

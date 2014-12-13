@@ -2,11 +2,12 @@
 
 class ColdTempMachineController extends MachineController {
 
-
 var tempStrength : float = 0.25;
 var optimalTemp : float = 50;
 
 var temperature : Temperature;
+
+var hissingSound : AudioClip;
 
 var animator : Animator;
 
@@ -21,6 +22,7 @@ function deploy () {
 }
 
 function operateMachine() {
+	AudioSource.PlayClipAtPoint(hissingSound,transform.position);
 	animator.SetBool("cooling", true);
 	lowerTemp(tempStrength * updateTime);
 	
