@@ -14,11 +14,12 @@ var ecoPerTree : float = 2;
 
 function setMachineVars() {
 	currentEco = 0;
-	treeControllers = new TreeController[10];
+/*	treeControllers = new TreeController[10];
 	for (var i : int = 0; i < trees.Length; i++) {
 		treeControllers[i] = trees[i].GetComponent(TreeController) as TreeController;
 	}
-	GameObject.Find("Environment").GetComponent(Ecosystem).registerEcoMachine(gameObject);
+*/	//GameObject.Find("Environment").GetComponent(Ecosystem).registerEcoMachine(gameObject);
+	animator = GetComponent(Animator);
 }
 
 function getEco() : float {
@@ -38,14 +39,16 @@ function operateMachine() {
 function addEco(amount : float) {
 	if(amount > 0) {
 		currentEco = Mathf.Min(currentEco + amount, maxEco);
-		treeControllers[Mathf.FloorToInt(currentEco/ecoPerTree - 1)].setSize(Mathf.Repeat(currentEco,ecoPerTree)/ecoPerTree);
+/*		treeControllers[Mathf.FloorToInt(currentEco/ecoPerTree - 1)].setSize(Mathf.Repeat(currentEco,ecoPerTree)/ecoPerTree);
 		treeControllers[Mathf.CeilToInt(currentEco/ecoPerTree)]
-						.setSize(Mathf.Min(1,currentEco - Mathf.CeilToInt(currentEco/ecoPerTree)/ecoPerTree));
+						.setSize(Mathf.Min(1,currentEco - Mathf.CeilToInt(currentEco/ecoPerTree)/ecoPerTree));*/
 	}
 }
 
 function die() {
 	GameObject.Find("Environment").GetComponent(Ecosystem).deleteEcoMachine(gameObject);
+	Destroy(transform.parent);
+	Destroy(transform);
 }
 
 }

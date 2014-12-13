@@ -8,6 +8,7 @@ var profitTime : float = 2;
 private var timeSinceLastMoney : float;
 
 var moneySound : AudioClip;
+var drillSound : AudioClip;
 
 var playerResources : PlayerResources;
 
@@ -26,6 +27,7 @@ function operateMachine() {
 	animator.SetBool("mine", true);
 	if(Time.timeSinceLevelLoad > timeSinceLastMoney + profitTime) {
 		AudioSource.PlayClipAtPoint(moneySound, transform.position);
+		AudioSource.PlayClipAtPoint(drillSound, transform.position);
 		addMoney(moneyAmount);
 		timeSinceLastMoney = Time.timeSinceLevelLoad;
 	}
