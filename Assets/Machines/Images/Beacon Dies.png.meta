@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: c39f43f5a4590ad4a90d44128960a916
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Beacon Dies
+    21300002: Beacon Dies_0
+    21300004: Beacon Dies_1
+    21300006: Beacon Dies_2
+    21300008: Beacon Dies_3
+    21300010: Beacon Dies_4
+    21300012: Beacon Dies_5
+    21300014: Beacon Dies_6
+    21300016: Beacon Dies_7
+    21300018: Beacon Dies_8
+    21300020: Beacon Dies_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Beacon Dies_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1658
+        width: 195
+        height: 271
+      alignment: 9
+      pivot: {x: .50000006, y: .154311284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1673
+        width: 164
+        height: 240
+      alignment: 9
+      pivot: {x: .448997319, y: .193303928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1670
+        width: 209
+        height: 266
+      alignment: 9
+      pivot: {x: .564034045, y: .191836715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1205
+        width: 224
+        height: 328
+      alignment: 9
+      pivot: {x: .5896191, y: .112379864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_4
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1233
+        width: 223
+        height: 368
+      alignment: 9
+      pivot: {x: .702547193, y: .0908700675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 822
+        width: 312
+        height: 369
+      alignment: 9
+      pivot: {x: .730558276, y: .0511765741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_6
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 800
+        width: 363
+        height: 294
+      alignment: 9
+      pivot: {x: .739642501, y: .14152433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 454
+        width: 466
+        height: 195
+      alignment: 9
+      pivot: {x: .848219037, y: .165422648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_8
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 442
+        width: 482
+        height: 201
+      alignment: 9
+      pivot: {x: .854013503, y: .208701208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beacon Dies_9
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 213
+        width: 643
+        height: 180
+      alignment: 9
+      pivot: {x: .859033346, y: .174716264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
