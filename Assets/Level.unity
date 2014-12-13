@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &258164746
 Transform:
   m_ObjectHideFlags: 0
@@ -947,6 +947,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21242958, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11e6e9cb3f996f246b21bc77047f0b1d, type: 2}
   m_RootGameObject: {fileID: 1332986464}
@@ -1103,6 +1107,7 @@ GameObject:
   - 4: {fileID: 1332986466}
   - 212: {fileID: 1332986465}
   - 114: {fileID: 1332986467}
+  - 114: {fileID: 1332986468}
   m_Layer: 0
   m_Name: Mothersheep
   m_TagString: Untagged
@@ -1164,6 +1169,22 @@ MonoBehaviour:
   temperature: {fileID: 0}
   ecosystem: {fileID: 0}
   population: {fileID: 0}
+--- !u!114 &1332986468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332986464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73a9e17be6fb4d45af670a0e7632509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinerPrefab: {fileID: 100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
+  EcoPrefab: {fileID: 100000, guid: 87e57d401af7d8447a5bebfd9ac50724, type: 2}
+  HeatPrefab: {fileID: 100000, guid: 3d66aa9b146aab74d965784dccef9f82, type: 2}
+  ColdPrefab: {fileID: 100000, guid: 699afc72f75f1314198ef62fcc804748, type: 2}
+  _anchor: {fileID: 0}
 --- !u!1 &1516180780
 GameObject:
   m_ObjectHideFlags: 0
