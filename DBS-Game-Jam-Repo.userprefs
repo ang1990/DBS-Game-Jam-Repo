@@ -1,11 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\Conditions\Ecosystem.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MarsSpin.js">
     <Files>
-      <File FileName="Assets\ecoBar.js" Line="35" Column="46" />
-      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="28" Column="42" />
-      <File FileName="Assets\Environment\Conditions\Ecosystem.js" Line="52" Column="20" />
-      <File FileName="Assets\Cheats.js" Line="30" Column="49" />
+      <File FileName="Assets\MarsSpin.js" Line="17" Column="1" />
+      <File FileName="Assets\MSheepMenuBehaviour.js" Line="13" Column="18" />
+      <File FileName="Assets\MainMenu.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
