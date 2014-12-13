@@ -12,12 +12,22 @@ private var height : float;
 private var MAX_CD : float;
 private var curCD : float;
 private var isOnCD : boolean;
+private var alertTime : float;
+private var maxAlertTime : float;
 
 function SetOnCD() {
 	isOnCD = true;
 	if (curCD == 0.0f) {
 		curCD = MAX_CD;
 	}
+}
+
+function GetOnCD() {
+	return isOnCD;
+}
+
+function AlertInsufficientFund() {
+	//renderer.material.mainTexture = Resources.Load("GUI/Textures/insufficientFund");
 }
 
 function Start () {
@@ -35,6 +45,8 @@ function Start () {
 	
 	// TOP: 1, 3
 	// BTM: 0, 2
+	
+	maxAlertTime = 2.0;
 	
 	MAX_TOP = vertices[1].y;
 	MAX_BTM = vertices[0].y;

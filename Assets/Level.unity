@@ -625,6 +625,7 @@ Transform:
   - {fileID: 258164746}
   - {fileID: 1718587655}
   - {fileID: 930745478}
+  - {fileID: 1691344374}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!23 &363984592
@@ -1274,7 +1275,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782960825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .466666222, y: 63.7333298, z: -10}
+  m_LocalPosition: {x: .466666222, y: 50, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1966441443}
@@ -2387,8 +2388,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
-  moneyAmount: 20
-  profitTime: 2
+  moneyAmount: 25
+  profitTime: 1
   moneySound: {fileID: 8300000, guid: 26ad42a8766f42f4a8e9c2140193faa4, type: 3}
   playerResources: {fileID: 0}
 --- !u!95 &1576431680
@@ -2596,6 +2597,77 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1025432478}
   m_GameObject: {fileID: 1614113996}
+  m_Mesh: {fileID: 4300000, guid: 20b147109abb42842882687e769ff765, type: 3}
+--- !u!1 &1691344373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1691344374}
+  - 33: {fileID: 1691344377}
+  - 23: {fileID: 1691344376}
+  - 114: {fileID: 1691344375}
+  m_Layer: 5
+  m_Name: minerBtnRed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1691344374
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: fd0db14c58db2f148b5e5c78bcdf099b, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691344373}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -.356507003, y: -.776943982, z: -.200000003}
+  m_LocalScale: {x: .101981997, y: .128380001, z: 1.05337703}
+  m_Children: []
+  m_Father: {fileID: 363984590}
+  m_RootOrder: 23
+--- !u!114 &1691344375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400028, guid: fd0db14c58db2f148b5e5c78bcdf099b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691344373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee24827f4c6c9514c88e7d6f24e613cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &1691344376
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300028, guid: fd0db14c58db2f148b5e5c78bcdf099b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691344373}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 5cc9f067e2899a54fb37108bd9ed0bfb, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1691344377
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300028, guid: fd0db14c58db2f148b5e5c78bcdf099b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691344373}
   m_Mesh: {fileID: 4300000, guid: 20b147109abb42842882687e769ff765, type: 3}
 --- !u!1 &1718587654
 GameObject:
