@@ -1,43 +1,65 @@
 ﻿#pragma strict
 
-
-var objectList : List.<GameObject>;
+var transformList : List.<Transform>;
 
 var timeSinceLastUpdate : float;
 var updateTime : float = 0.025;
 
-var _anchor = Transform;
+var _anchor : Transform;
+
+var oldScale : Vector3;
 
 var selectedObject : GameObject;
+var selectedObjectChanged : boolean = false;
 
 function Start() {
-	objectList = new List.<GameObject>();
+	transformList = new List.<Transform>();
 	_anchor = transform.parent;
 }
 
 function OnTriggerEnter2D(other : Collider2D) {
-	objectList.Add(other.gameObject.parent);
+	transformList.Add(other.transform.parent);
 }
 
 function OnTriggerExit2D(other : Collider2D) {
-	objectList.Remove(other.gameObject.parent);
+	transformList.Remove(other.transform.parent);
 }
 
 
 function Update() {
 	if(Time.timeSinceLevelLoad > timeSinceLastUpdate + updateTime) {
-		if (objectList.Length > 0) {
+		if (transformList.Count > 0) {
 			var smallestDist : float = 360;
-			for(var o : GameObject in objectList) {
+			for(var o : Transform in transformList) {
 				var diff : float = angleDifference(o.transform.rotation.z);
 				if(smallestDist > diff) {
-					selectedObject = o;
+					if(selectedObject != null) {
+						undoHighlight();
+					}
+					selectedObject = o.gameObject;
 					smallestDist = diff;
+					selectedObjectChanged = true;
 				}
 			}
 		}
+		if(selectedObject != null)
+		{
+			highlightObject();
+		}
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
 	}
+}
+
+function undoHighlight() {
+	selectedObject.transform.localScale = oldScale;
+}
+
+function highlightObject() {
+	if(selectedObjectChanged) {
+		oldScale = selectedObject.transform.localScale;
+		selectedObjectChanged = false;
+	}
+	selectedObject.transform.localScale = selectedObject.transform.localScale * 1.1;
 }
 
 function angleDifference(angle : float) {
