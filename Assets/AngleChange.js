@@ -14,14 +14,14 @@ function Start () {
 }
 
 function Update () {
-	if(Input.GetKey("a")) {
+	if(Input.GetKey("a") && Time.timeScale > 0) {
 		_animator.SetBool("Flight",true);
 		currentSpeed = Mathf.Min(currentSpeed + (acceleration * Time.deltaTime), maxSpeed);
 		if(currentSpeed < 0)
 			currentSpeed = Mathf.Min(currentSpeed + (deceleration * Time.deltaTime), maxSpeed);
 		mothersheep.localScale.x = -1;
 	}
-	else if(Input.GetKey("d")) {
+	else if(Input.GetKey("d") && Time.timeScale > 0) {
 		_animator.SetBool("Flight",true);
 		currentSpeed = Mathf.Max(currentSpeed - (acceleration * Time.deltaTime), -maxSpeed);
 		if(currentSpeed > 0)

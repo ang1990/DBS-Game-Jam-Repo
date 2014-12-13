@@ -2,6 +2,8 @@
 
 class EcoMachineController extends MachineController {
 
+var animator : Animator;
+
 var trees : GameObject[];
 private var treeControllers : TreeController[];
 
@@ -23,7 +25,13 @@ function getEco() : float {
 	return currentEco;
 }
 
+function deploy () {
+	transform.localPosition.y -= (deployTravelDist / deployTime * (Time.timeSinceLevelLoad - timeSinceLastUpdate));
+	return;
+}
+
 function operateMachine() {
+	animator.SetBool("heal", true);
 	addEco(ecoAddPerSecond * (Time.timeSinceLevelLoad - timeSinceLastUpdate));
 }
 

@@ -26,10 +26,9 @@ function Start () {
 	disasterSpawner = GetComponent(DisasterSpawner);
 	timeLeft = 200;
 	gameState = GameState.Playing;
-	var env : GameObject = GameObject.Find("Environment");
-	temperature = env.GetComponent(Temperature);
-	ecosystem = env.GetComponent(Ecosystem);
-	population = env.GetComponent(Population);
+	temperature = GetComponent(Temperature);
+	ecosystem = GetComponent(Ecosystem);
+	population = GetComponent(Population);
 }
 
 function Update () {
