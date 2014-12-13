@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var tempDeltaRate : float = 10;
+var tempDeltaRate : float = 25;
 var ecoDeltaRate : float = 50;
 var popDeltaRate : float  = 50;
 

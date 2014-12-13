@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 private var tempBar : GameObject;
 private var vertices : Vector3[];
@@ -45,14 +45,6 @@ function Start () {
 	MAX_BTM = vertices[0].y;
 
 	height = Mathf.Abs(MAX_TOP - MAX_BTM);
-}
-
-function Update () {
-	vertices[1].y = MAX_BTM + height * temp.getTempPercent();
-	vertices[3].y = MAX_BTM + height * temp.getTempPercent();
-
-	uv[1].y = 1.0f;// playerControl.GetHpRatio();
-	uv[3].y = 1.0f;// playerControl.GetHpRatio();
 	
 	GetComponent(MeshFilter).mesh.vertices = vertices;
 	GetComponent(MeshFilter).mesh.uv = uv;
