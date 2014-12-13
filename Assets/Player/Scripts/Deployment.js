@@ -43,4 +43,3 @@ function deployEcoMachine() {
 	}
 }
 
->>>>>>> origin/master
