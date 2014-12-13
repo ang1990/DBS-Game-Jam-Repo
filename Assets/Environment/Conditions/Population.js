@@ -4,13 +4,12 @@ var currentPop : float;
 var minPop : float = 0;
 var maxPop : float = 100;
 
-var temp : MonoBehaviour;
-var eco : MonoBehaviour;
+var temp : Temperature;
+var eco : Ecosystem;
 
 function Start() {
-	temp = GetComponent(Temperature) as MonoBehaviour;
-	eco = GetComponent(Ecosystem) as MonoBehaviour;
-	
+	temp = GetComponent(Temperature);
+	eco = GetComponent(Ecosystem);
 }
 
 function getPop() : float {
