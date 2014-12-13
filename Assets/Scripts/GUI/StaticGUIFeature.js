@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 private var tempBar : GameObject;
 private var vertices : Vector3[];
@@ -17,8 +17,20 @@ function Start () {
 	uv = tempBar.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
-	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
-    transform.localScale = new Vector3(transform.localScale.x * Cam.camera.aspect, transform.localScale.y, transform.localScale.z);
+	vertices[0] = transform.TransformPoint(vertices[0]);
+	vertices[1] = transform.TransformPoint(vertices[1]);
+	vertices[2] = transform.TransformPoint(vertices[2]);
+	vertices[3] = transform.TransformPoint(vertices[3]);
+	
+	vertices[0] = new Vector3(vertices[0].x * Cam.camera.aspect, vertices[0].y, 0);
+	vertices[1] = new Vector3(vertices[1].x * Cam.camera.aspect, vertices[1].y, 0);
+	vertices[2] = new Vector3(vertices[2].x * Cam.camera.aspect, vertices[2].y, 0);
+	vertices[3] = new Vector3(vertices[3].x * Cam.camera.aspect, vertices[3].y, 0);
+
+	vertices[0] = transform.InverseTransformPoint(vertices[0]);
+	vertices[1] = transform.InverseTransformPoint(vertices[1]);
+	vertices[2] = transform.InverseTransformPoint(vertices[2]);
+	vertices[3] = transform.InverseTransformPoint(vertices[3]);
 
 	temp = GameObject.Find("Environment").GetComponent(Temperature);
 
@@ -33,14 +45,6 @@ function Start () {
 	MAX_BTM = vertices[0].y;
 
 	height = Mathf.Abs(MAX_TOP - MAX_BTM);
-}
-
-function Update () {
-	vertices[1].y = MAX_BTM + height * temp.getTempPercent();
-	vertices[3].y = MAX_BTM + height * temp.getTempPercent();
-
-	uv[1].y = 1.0f;// playerControl.GetHpRatio();
-	uv[3].y = 1.0f;// playerControl.GetHpRatio();
 	
 	GetComponent(MeshFilter).mesh.vertices = vertices;
 	GetComponent(MeshFilter).mesh.uv = uv;

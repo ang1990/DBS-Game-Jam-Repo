@@ -1,8 +1,11 @@
 ﻿#pragma strict
 
 var _transform : Transform;
-var moveSpeed : float;
+var maxSpeed : float;
+var acceleration : float = 120;
+var currentSpeed : float = 0;
 var mothersheep : Transform;
+var deceleration : float = 120;
 
 function Start () {
 	_transform = transform;
@@ -10,11 +13,23 @@ function Start () {
 
 function Update () {
 	if(Input.GetKey("a")) {
-		_transform.Rotate(0,0,moveSpeed*Time.deltaTime);
+		currentSpeed = Mathf.Min(currentSpeed + (acceleration * Time.deltaTime), maxSpeed);
+		if(currentSpeed < 0)
+			currentSpeed = Mathf.Min(currentSpeed + (deceleration * Time.deltaTime), maxSpeed);
 		mothersheep.localScale.x = -1;
 	}
 	else if(Input.GetKey("d")) {
-		_transform.Rotate(0,0,-moveSpeed*Time.deltaTime);
+		currentSpeed = Mathf.Max(currentSpeed - (acceleration * Time.deltaTime), -maxSpeed);
+		if(currentSpeed > 0)
+			currentSpeed = Mathf.Max(currentSpeed - (deceleration * Time.deltaTime), -maxSpeed);
 		mothersheep.localScale.x = 1;
 	}
+	else {
+		if(currentSpeed > 0) {
+			currentSpeed = Mathf.Max(0, currentSpeed - (deceleration * Time.deltaTime));
+		}
+		else
+			currentSpeed = Mathf.Min(0, currentSpeed + (deceleration * Time.deltaTime));
+	}
+	_transform.Rotate(0,0,currentSpeed * Time.deltaTime);
 }
