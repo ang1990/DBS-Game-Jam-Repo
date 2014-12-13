@@ -2121,6 +2121,8 @@ GameObject:
   - 114: {fileID: 1332986468}
   - 114: {fileID: 1332986469}
   - 95: {fileID: 1332986470}
+  - 61: {fileID: 1332986472}
+  - 114: {fileID: 1332986471}
   m_Layer: 0
   m_Name: Mothersheep
   m_TagString: Untagged
@@ -2233,6 +2235,28 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1332986471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332986464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b88b0b33fd50c42b729da65071bf09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1332986472
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332986464}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 15, y: 16}
+  m_Center: {x: 0, y: -10}
 --- !u!1 &1426775876
 GameObject:
   m_ObjectHideFlags: 0
