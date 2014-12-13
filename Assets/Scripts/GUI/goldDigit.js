@@ -1,17 +1,17 @@
 ﻿#pragma strict
 
-private var digit0 : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
 private var MAX_TOP : float;
 private var MAX_BTM : float;
 private var height : float;
-    
+   
+ var num : int = 0;
+   
 function Start () {
-	digit0 = GameObject.Find("digit0");
-	vertices = digit0.GetComponent(MeshFilter).mesh.vertices;
-	uv = digit0.GetComponent(MeshFilter).mesh.uv;
+	vertices = gameObject.GetComponent(MeshFilter).mesh.vertices;
+	uv = gameObject.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);
@@ -23,10 +23,11 @@ function Start () {
 	MAX_BTM = vertices[0].y;
 
 	height = Mathf.Abs(MAX_TOP - MAX_BTM);
+	setNumber(0);
 }
 
-function Update () {
-	var num = 782345;
+function setNumber(val : int) {
+	var num = val;
 	
 	vertices[1].y = MAX_BTM + height * 1.0f;
 	vertices[3].y = MAX_BTM + height * 1.0f;
@@ -34,7 +35,15 @@ function Update () {
 	uv[1].y = 1.0f;
 	uv[3].y = 1.0f;
 	
-	renderer.material.mainTexture = Resources.Load("GUI/Textures/numbers/" + num.ToString()[num.ToString().Length - 1], typeof(Texture2D)) as Texture;
+	if(val < 0) {
+		// Set all vertices to 0
+		vertices[0].Set(0.0f, 0.0f, 0.0f);
+		vertices[1].Set(0.0f, 0.0f, 0.0f);
+		vertices[2].Set(0.0f, 0.0f, 0.0f);
+		vertices[3].Set(0.0f, 0.0f, 0.0f);
+	}
+	else
+		renderer.material.mainTexture = Resources.Load("GUI/Textures/numbers/" + num.ToString(), typeof(Texture2D)) as Texture;
 	/*if (num.ToString().Length >= 0)
 	{
 			

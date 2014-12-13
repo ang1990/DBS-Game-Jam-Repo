@@ -24,7 +24,7 @@ function operateMachine() {
 }
 
 private function addMoney(amount : int) {
-//	playerResources.addMoney(amount);
+	playerResources.addMoney(amount);
 }
 
 }

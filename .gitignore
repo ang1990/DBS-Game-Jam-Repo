@@ -10,15 +10,12 @@ Library/AssetServerCacheV3
 Library/FailedAssetImports.txt
 Library/ScriptAssemblies
 Library/ScriptMapper
-Library/assetDatabase3
 Library/cache
 Library/expandedItems
 Library/metadata
 Library/metadata/*
 Library/previews
 Library/guidmapper
-Library/assetDatabase3
-Library/assetDatabase3
 *.dwlt
 Library/expandedItems
 Library/guidmapper
