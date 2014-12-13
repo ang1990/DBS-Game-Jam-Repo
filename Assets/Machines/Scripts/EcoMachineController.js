@@ -3,6 +3,7 @@
 class EcoMachineController extends MachineController {
 
 var animator : Animator;
+
 var trees : GameObject[];
 private var treeControllers : TreeController[];
 
