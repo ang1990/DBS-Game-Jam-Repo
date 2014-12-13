@@ -37,10 +37,12 @@ function Start () {
 function Update () {
 	if(Time.timeSinceLevelLoad > timeSinceLastUpdate + updateTime) {
 		timeLeft -= (Time.timeSinceLevelLoad - timeSinceLastUpdate);
+		Debug.Log(timeLeft);
 		if(timeLeft < 0) {
 			gameState = GameState.Defeat;
 		}
-		else if(population.getPop() > 0.7 * population.getMaxPop())
+		//else if(population.getPop() > 0.7 * population.getMaxPop())
+		else if(ecosystem.getEcoPercentage() >= 1)
 			gameState = GameState.Victory;
 		switch(phase) {
 			case TerraPhase.T1 :
@@ -54,19 +56,23 @@ function Update () {
 				break;
 			default: break;
 			}
-		}
+		Debug.Log(gameState);
 	switch(gameState) {
+		
 		case GameState.Playing:
 			break;
 		case GameState.Victory:
+			Application.LoadLevel("Win");
 			break;
 		case GameState.Defeat:
+			Application.LoadLevel("Fail");
 			break;
 		default: break;
 	}
 	handleDisasterSpawning();
 	
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	}
 }
 
 function ecoMachinesAvailable() : boolean {
