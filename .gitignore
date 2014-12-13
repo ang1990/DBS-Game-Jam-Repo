@@ -18,3 +18,7 @@ Library/metadata/*
 Library/previews
 Library/guidmapper
 Library/assetDatabase3
+Library/assetDatabase3
+*.dwlt
+Library/expandedItems
+Library/guidmapper
