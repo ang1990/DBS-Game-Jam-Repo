@@ -12,8 +12,8 @@ var timeLeft : float;
 var gameController : GameController;
 
 function Start () {
-	XDistTravel = (GameObject.Find("Red Timer").renderer.bounds.size.x) / 2;
-	initialX = transform.position.x - (0.5 * renderer.bounds.size.x);
+	XDistTravel = (GameObject.Find("redTimer").renderer.bounds.size.x)*0.85;
+	initialX = (XDistTravel*-0.52);
 	gameController = GameObject.Find("Environment").GetComponent(GameController);
 	maxTime = 10;// gameController.getTimeLeft();
 	timeLeft = maxTime;
@@ -22,8 +22,8 @@ function Start () {
 function Update () {
 	if(Time.timeSinceLevelLoad > timeSinceLastUpdate + timeBetweenUpdates) {
 			timeLeft -= (Time.timeSinceLevelLoad - timeSinceLastUpdate);
-			var progress : float = 1 - timeLeft/maxTime;
-			transform.position.x =  initialX + (progress * XDistTravel);
+			var progress : float = Mathf.Min(1, 1 - timeLeft/maxTime);
+			transform.position.x = initialX + (progress * XDistTravel);
 			timeSinceLastUpdate = Time.timeSinceLevelLoad;
 		}
 }	

@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 70, z: 0}
+  m_LocalPosition: {x: 0, y: 67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59,9 +59,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miner: {fileID: 100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
-  coldMachine: {fileID: 0}
-  hotMachine: {fileID: 0}
-  ecoMachine: {fileID: 0}
+  coldMachine: {fileID: 100000, guid: 699afc72f75f1314198ef62fcc804748, type: 2}
+  hotMachine: {fileID: 100000, guid: 3d66aa9b146aab74d965784dccef9f82, type: 2}
+  ecoMachine: {fileID: 100000, guid: 87e57d401af7d8447a5bebfd9ac50724, type: 2}
   minerCost: 500
   coldMachineCost: 1500
   hotMachineCost: 1500

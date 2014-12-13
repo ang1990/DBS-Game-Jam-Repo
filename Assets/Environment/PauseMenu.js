@@ -11,7 +11,7 @@ function Start(){
 	pauseEnabled = false;
 	Time.timeScale = 1;
 	AudioListener.volume = 1;
-	Screen.showCursor = false;
+	Screen.showCursor = true;
 }
 
 function Update(){
