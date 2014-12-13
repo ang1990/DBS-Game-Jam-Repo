@@ -42,14 +42,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73a9e17be6fb4d45af670a0e7632509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  miner: {fileID: 0}
+  miner: {fileID: 100000, guid: 979017d57d74d9d46b2c546ebd471bfb, type: 2}
   coldMachine: {fileID: 0}
   hotMachine: {fileID: 0}
   ecoMachine: {fileID: 0}
-  minerCost: 0
-  coldMachineCost: 0
-  hotMachineCost: 0
-  ecoMachineCost: 0
+  minerCost: 500
+  coldMachineCost: 1500
+  hotMachineCost: 1500
+  ecoMachineCost: 2000
+  _anchor: {fileID: 0}
   playerResources: {fileID: 0}
 --- !u!114 &11423670
 MonoBehaviour:
