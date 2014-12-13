@@ -17,7 +17,11 @@ function SetOnCD() {
 		curCD = MAX_CD;
 	}
 }
-    
+
+function GetOnCD() {
+	return isOnCD;
+}
+
 function Start () {
 	tempColdBtnCD = GameObject.Find("tempColdBtnCD");
 	vertices = tempColdBtnCD.GetComponent(MeshFilter).mesh.vertices;
