@@ -39,7 +39,8 @@ function Update () {
 		if(timeLeft < 0) {
 			gameState = GameState.Defeat;
 		}
-		else if(population.getPop() > 0.7 * population.getMaxPop())
+		//else if(population.getPop() > 0.7 * population.getMaxPop())
+		else if(ecosystem.getEcoPercentage() >= 1)
 			gameState = GameState.Victory;
 		switch(phase) {
 			case TerraPhase.T1 :
