@@ -3,6 +3,7 @@
 private var state : int;
 var bullet : GameObject;
 var anchor : Transform;
+var moneySound : AudioClip;
 
 function setState(_state : int) {
 	state = _state;
@@ -53,6 +54,7 @@ function Update () {
 				}
 				Destroy(nearestObj.transform.parent.gameObject);
 				Destroy(nearestObj);
+				AudioSource.PlayClipAtPoint(moneySound, transform.position);
 			}
 		}
 		else if (nearestTag.Equals("Disaster") && state == 2){

@@ -9,11 +9,16 @@ var temperature : Temperature;
 
 var hissingSound : AudioClip;
 
+var timeSinceLastSound : float;
+var timeBetweenSounds : float;
+
 var animator : Animator;
 
 function setMachineVars() {
 	temperature = GameObject.Find("Environment").GetComponent(Temperature);
 	animator = GetComponent(Animator);
+	timeSinceLastSound = Time.timeSinceLevelLoad;
+	timeBetweenSounds = hissingSound.length;
 }
 
 function deploy () {
@@ -22,8 +27,11 @@ function deploy () {
 }
 
 function operateMachine() {
-	AudioSource.PlayClipAtPoint(hissingSound,transform.position);
-	animator.SetBool("cooling", true);
+	if(Time.timeSinceLevelLoad > timeSinceLastSound + timeBetweenSounds) {
+		AudioSource.PlayClipAtPoint(hissingSound,transform.position);
+		animator.SetBool("cooling", true);
+		timeSinceLastSound = Time.timeSinceLevelLoad;
+	}
 	lowerTemp(tempStrength * updateTime);
 	
 }

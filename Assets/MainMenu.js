@@ -34,7 +34,7 @@ function OnGUI() {
 			titleLabelY*Screen.height, 
 			titleWidth*Screen.width,
 			titleHeight*Screen.width); // height until first button
-	GUI.Label(buttonRect, GUIContent("Save the World!"), centeredStyle);
+	GUI.Label(buttonRect, GUIContent("The Mothersheep - Save The World!"), centeredStyle);
 
 	// Start Game
 	if (newButton(startButtonY, "Start Game")) {
