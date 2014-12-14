@@ -33,8 +33,13 @@ function operateMachine() {
 	}
 }
 
+function dying() {
+	animator.SetBool("dies", true);
+}
+
 private function addMoney(amount : int) {
 	playerResources.addMoney(amount);
 }
+
 
 }

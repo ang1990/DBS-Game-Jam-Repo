@@ -29,5 +29,8 @@ function raiseTemp(amount : float) {
 	temperature.addTemp(amount);
 }
 
+function dying() {
+	animator.SetBool("dies", true);
+}
 
 }

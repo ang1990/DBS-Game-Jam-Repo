@@ -32,5 +32,8 @@ function lowerTemp(amount : float) {
 	temperature.reduceTemp(amount);
 }
 
+function dying() {
+	animator.SetBool("dies", true);
+}
 
 }

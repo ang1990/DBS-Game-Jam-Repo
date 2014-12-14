@@ -26,9 +26,10 @@ GameObject:
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Machine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +59,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+--- !u!61 &6100000
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 3.15999985, y: 3.56999969}
+  m_Center: {x: -.0525972843, y: .368178308}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -84,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd224b615fc3a742a9d494fed068e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineCompoundTime: 0
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   tempStrength: .5
   optimalTemp: 50

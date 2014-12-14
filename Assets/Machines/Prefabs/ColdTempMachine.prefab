@@ -29,7 +29,7 @@ GameObject:
   - 61: {fileID: 6140906}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Machine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3149bc7c9153d6f468513abbaaa80569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineCompoundTime: 0
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   tempStrength: .5
   optimalTemp: 50

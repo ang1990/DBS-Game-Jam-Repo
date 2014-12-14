@@ -85,9 +85,10 @@ function growTree () {
 	
 }
 
-function die() {
-	Destroy(transform.parent);
-	Destroy(transform);
+function dying() {
+	animator.SetBool("dies", true);
 }
+
+
 
 }

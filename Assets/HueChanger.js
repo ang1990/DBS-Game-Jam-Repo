@@ -11,6 +11,5 @@ function Start () {
 
 function Update () {
 	tempPercent = temperature.getTempPercent();
-	Debug.Log(tempPercent);
 	_sprite.color.r = (initR*tempPercent);
 }

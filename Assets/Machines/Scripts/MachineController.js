@@ -17,18 +17,17 @@ protected var state : MachineState;
 protected var deployTime : float = 1;
 protected var deployTravelDist : float;
 
-//var animator : Animator;
+var machineCompoundTime : float;
 
 var deploySound : AudioClip;
 
 function Start () {
 	health = maxHealth;
 	timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	machineCompoundTime = 0;
 	deployTravelDist = 16.2;
 	state = MachineState.Deploying;
 	setMachineVars();
-	//animator = gameObject.GetComponent(Animator) as Animator;
-	//animator.SetBool("mine", false);
 	AudioSource.PlayClipAtPoint(deploySound, transform.position);
 }
 
@@ -52,6 +51,19 @@ function Update () {
 			default: break;
 		}
 		timeSinceLastUpdate = Time.timeSinceLevelLoad;
+	}
+	
+}
+
+function OnTriggerStay2D (col : Collider2D)
+{	
+	
+	if(col.gameObject.tag == "Disaster") {
+		machineCompoundTime += Time.timeSinceLevelLoad - timeSinceLastUpdate;
+		if (machineCompoundTime >= 1) {
+			machineCompoundTime = 0;
+			reduceHealth (25);
+		}
 	}
 }
 
@@ -92,6 +104,13 @@ function deploy() {}
 function operateMachine() {}
 
 // Placeholder. Might have to update here or override depending on future implementation.
-function die() {}
+function die() {
+	dying();
+	yield WaitForSeconds(6);
+	Destroy (transform.parent.gameObject);
+}
+
+function dying() {};
+
 
 }

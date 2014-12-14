@@ -30,7 +30,7 @@ GameObject:
   - 82: {fileID: 8259906}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Machine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 66, z: 0}
+  m_LocalPosition: {x: 0, y: 64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 187bd2ff2fd1065479b1167ac904ff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineCompoundTime: 0
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   animator: {fileID: 0}
   tree1: {fileID: 100000, guid: ddc39599c5ea90646b2a6efdf58bc24d, type: 2}

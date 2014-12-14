@@ -58,15 +58,15 @@ function updateAngle() {
 }
 
 function dealDamage() {
-	var machines : GameObject[] = GameObject.FindGameObjectsWithTag("Machine");
-	for(var m : GameObject in machines) {
-		var mControl : MachineController = m.GetComponent(MachineController);
-		var machineAngle : float = mControl.getAngle();
-		if(angleIsWithinRange(machineAngle)) {
-			mControl.reduceHealth(damagePerSecond * (timeSinceLastDamage - damageUpdateTime));
-		}
-	}
-	return;
+//	var machines : GameObject[] = GameObject.FindGameObjectsWithTag("Machine");
+//	for(var m : GameObject in machines) {
+//		var mControl : MachineController = m.GetComponent(MachineController);
+//		var machineAngle : float = mControl.getAngle();
+//		if(angleIsWithinRange(machineAngle)) {
+//			mControl.reduceHealth(damagePerSecond * (timeSinceLastDamage - damageUpdateTime));
+//		}
+//	}
+//	return;
 }
 
 function angleIsWithinRange(angle : float) : boolean {
