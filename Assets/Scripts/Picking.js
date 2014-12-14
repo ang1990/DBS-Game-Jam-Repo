@@ -14,7 +14,7 @@ function Update () {
 	var hits : RaycastHit2D[];	
 	hits = Physics2D.RaycastAll(Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0.0f, 0.0f, -10.0f)), new Vector3(0.0f, 0.0f, 1.0f));
 	
-	Debug.Log("STATE " + state);
+	//Debug.Log("STATE " + state);
 	
 	var i = 0;
 	var nearest = float.MaxValue;
@@ -31,11 +31,24 @@ function Update () {
 	    i++;
 	}
 	
-	if (Input.GetMouseButtonDown(0) && state == 1) {
+	if (Input.GetMouseButtonDown(0) && state == 3) {
 		if (nearestTag.Equals("Machine")){
-			//Debug.Log("MACHINE");
+			Debug.Log("MACHINE");
 			if (nearestObj != null) {
-				//Debug.Log("DESTROY");
+				Debug.Log("DESTROY " + nearestObj.transform.parent.name);
+				if (nearestObj.transform.parent.name.Equals("Miner(Clone)")) {
+					Debug.Log("GAIN 375 gold");
+					GameObject.Find("Mothersheep").GetComponent(PlayerResources).addMoney(375);
+				}
+				else if (nearestObj.transform.parent.name.Equals("ColdTempMachine(Clone)")
+				|| nearestObj.transform.parent.name.Equals("HotTempMachine(Clone)")) {
+					Debug.Log("GAIN 1.2k gold");
+					GameObject.Find("Mothersheep").GetComponent(PlayerResources).addMoney(1200);
+				}
+				else if (nearestObj.transform.parent.name.Equals("EcoMachine(Clone)")) {
+					Debug.Log("GAIN 1.5k gold");
+					GameObject.Find("Mothersheep").GetComponent(PlayerResources).addMoney(1500);
+				}
 				Destroy(nearestObj.transform.parent.gameObject);
 				Destroy(nearestObj);
 			}
