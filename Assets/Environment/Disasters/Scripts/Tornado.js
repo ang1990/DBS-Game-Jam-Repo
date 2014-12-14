@@ -5,7 +5,7 @@ var timeBetweenWipes : float;
 var currentAngle : float;
 
 function Start () {
-	Destroy (gameObject, 10);
+	Destroy (gameObject, 15);
 }
 
 function Update () {

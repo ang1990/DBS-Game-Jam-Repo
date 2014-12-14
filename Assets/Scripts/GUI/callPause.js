@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var commandStop : GameObject;
+private var callPause : GameObject;
 private var vertices : Vector3[];
 private var uv : Vector2[];
 private var Cam : GameObject;
@@ -9,9 +9,9 @@ private var MAX_BTM : float;
 private var height : float;
     
 function Start () {
-	commandStop = GameObject.Find("commandStop");
-	vertices = commandStop.GetComponent(MeshFilter).mesh.vertices;
-	uv = commandStop.GetComponent(MeshFilter).mesh.uv;
+	callPause = GameObject.Find("pauseButton");
+	vertices = callPause.GetComponent(MeshFilter).mesh.vertices;
+	uv = callPause.GetComponent(MeshFilter).mesh.uv;
 	Cam = GameObject.Find("GUICam");
 	
 	transform.position = new Vector3(transform.position.x * Cam.camera.aspect, transform.position.y, transform.position.z);

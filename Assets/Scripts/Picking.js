@@ -1,6 +1,8 @@
 ﻿#pragma strict
 
 private var state : int;
+var bullet : GameObject;
+var anchor : Transform;
 
 function setState(_state : int) {
 	state = _state;
@@ -31,11 +33,11 @@ function Update () {
 	    i++;
 	}
 	
-	if (Input.GetMouseButtonDown(0) && state == 3) {
-		if (nearestTag.Equals("Machine")){
+	if (Input.GetMouseButtonDown(0)) {
+		if (nearestTag.Equals("Machine") && state == 3){
 			Debug.Log("MACHINE");
 			if (nearestObj != null) {
-				Debug.Log("DESTROY " + nearestObj.transform.parent.name);
+				//Debug.Log("DESTROY " + nearestObj.transform.parent.name);
 				if (nearestObj.transform.parent.name.Equals("Miner(Clone)")) {
 					Debug.Log("GAIN 375 gold");
 					GameObject.Find("Mothersheep").GetComponent(PlayerResources).addMoney(375);
@@ -52,6 +54,12 @@ function Update () {
 				Destroy(nearestObj.transform.parent.gameObject);
 				Destroy(nearestObj);
 			}
+		}
+		else if (nearestTag.Equals("Disaster") && state == 2){
+			//Instantiate(bullet, Vector3.zero, Quaternion.Euler(0,0,anchor.eulerAngles.z));//, Vector3( , , 0.0f));
+			Debug.Log("TORNADO");
+			Destroy(nearestObj.transform.parent.gameObject);
+			Destroy(nearestObj);
 		}
 	}	
 	if (Input.GetMouseButtonDown(1)) {
