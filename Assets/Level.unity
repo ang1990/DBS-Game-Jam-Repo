@@ -1130,6 +1130,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 633412454}
   - 212: {fileID: 633412453}
+  - 114: {fileID: 633412455}
   m_Layer: 0
   m_Name: Mars-inside
   m_TagString: Untagged
@@ -1171,6 +1172,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &633412455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 633412452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d38dd3e07cd9e746b17caf4326c25ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temperature: {fileID: 1611560713}
+  tempPercent: 0
+  _sprite: {fileID: 633412453}
+  initR: 0
 --- !u!1 &646849299
 GameObject:
   m_ObjectHideFlags: 0
