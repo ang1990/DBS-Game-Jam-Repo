@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba77d24d8564c49b2f2055f0e19792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineCompoundTime: 0
   deploySound: {fileID: 8300000, guid: 6ea947b646ac5c24f8b6f0456823867b, type: 3}
   moneyAmount: 25
   profitTime: 1
@@ -536,7 +537,7 @@ MonoBehaviour:
   titleLabelY: .349999994
   startButtonY: .5
   quitButtonY: .649999976
-  gameSceneName: main
+  gameSceneName: level
 --- !u!1 &1887286549
 GameObject:
   m_ObjectHideFlags: 0
