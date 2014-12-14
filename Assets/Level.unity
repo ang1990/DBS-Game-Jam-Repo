@@ -2203,7 +2203,7 @@ Transform:
   m_GameObject: {fileID: 1268989732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 50, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1596878227}
   m_RootOrder: 0
@@ -2968,18 +2968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d5dbb7ae0865942aaca067fd44a9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angularVelocity: 0
-  maxVelocity: 10
+  timeSinceLastWipe: 0
+  timeBetweenWipes: 0
   currentAngle: 0
-  velocityUpdateTime: 4
-  timeSinceLastVelocityUpdate: 0
-  damageWidth: 5
-  damagePerSecond: 10
-  timeSinceLastUpdate: 0
-  updateTime: .0250000004
-  timeSinceLastDamage: 0
-  damageUpdateTime: .5
-  health: 0
 --- !u!4 &1596878227
 Transform:
   m_ObjectHideFlags: 0
@@ -3107,10 +3098,11 @@ MonoBehaviour:
   disasterSpawner: {fileID: 0}
   timeBetweenDisasters: 20
   timeSinceLastDisaster: 0
-  chanceOfDisaster: .25
+  chanceOfDisaster: 25
   temperature: {fileID: 0}
   ecosystem: {fileID: 0}
   population: {fileID: 0}
+  controlCompoundTime: 0
   ecoMachinesAllowed: 0
 --- !u!114 &1611560717
 MonoBehaviour:
@@ -3124,6 +3116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disasters: []
+  tornado: {fileID: 100000, guid: 92ae102df49bd784987e570607f6ee5b, type: 2}
   currentDisasters: []
 --- !u!1 &1691344373
 GameObject:
