@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\ecoBtnRed.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Environment\GameController.js">
     <Files>
-      <File FileName="Assets\Scripts\GUI\ecoBtnRed.js" Line="42" Column="22" />
+      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="50" Column="2" />
+      <File FileName="Assets\Environment\Conditions\Ecosystem.js" Line="34" Column="38" />
+      <File FileName="Assets\Environment\GameController.js" Line="43" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
