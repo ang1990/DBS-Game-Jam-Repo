@@ -49,6 +49,7 @@ function Update () {
 	
 	if (nearestName.Equals(transform.name) && Input.GetMouseButtonDown(0)) {
 		Debug.Log("Clicked stop");
+		GameObject.Find("Environment").GetComponent(Picking).setState(1);
 	}
 	
 	vertices[1].y = MAX_BTM + height * 1.0f;
