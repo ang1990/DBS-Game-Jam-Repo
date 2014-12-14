@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Machines\Scripts\EcoMachineController.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\ecoBar.js">
     <Files>
-      <File FileName="Assets\Machines\Scripts\EcoMachineController.js" Line="48" Column="33" />
-      <File FileName="Assets\Player\Scripts\Deployment.js" Line="19" Column="2" />
+      <File FileName="Assets\Environment\Conditions\Ecosystem.js" Line="35" Column="29" />
+      <File FileName="Assets\Scripts\GUI\ecoBar.js" Line="34" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
