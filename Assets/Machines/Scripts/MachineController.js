@@ -4,7 +4,7 @@ class MachineController extends MonoBehaviour {
 
 protected enum MachineState {Deploying, Operating, Idling, Dying};
 
-protected var maxHealth : float = 100;
+protected var maxHealth : float = 70;
 protected var health : float;
 
 protected var angle : float;
