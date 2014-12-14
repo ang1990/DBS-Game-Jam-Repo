@@ -15,15 +15,18 @@ var disasterSpawner : DisasterSpawner;
 
 var timeBetweenDisasters : float = 20;
 var timeSinceLastDisaster : float;
-var chanceOfDisaster : float = 0.25;
+var chanceOfDisaster : int = 25;
 
 var temperature : Temperature;
 var ecosystem : Ecosystem;
 var population : Population;
 
+var controlCompoundTime : float;
+
 var ecoMachinesAllowed : boolean = false;
 
 function Start () {
+	controlCompoundTime = 0;
 	phase = TerraPhase.T1;
 	disasterSpawner = GetComponent(DisasterSpawner);
 	timeLeft = 200;
@@ -81,9 +84,17 @@ function getTimeLeft() : float {
 }
 
 function handleDisasterSpawning() {
-	if(Time.timeSinceLevelLoad > timeSinceLastDisaster + timeBetweenDisasters) {
+	//if(Time.timeSinceLevelLoad > timeSinceLastDisaster + timeBetweenDisasters) {
+	controlCompoundTime += Time.timeSinceLevelLoad - timeSinceLastUpdate;
+	if(controlCompoundTime > 2) {
+		controlCompoundTime = 0;
 		timeSinceLastDisaster = Time.timeSinceLevelLoad;
-		if(Random.Range(0,1) < chanceOfDisaster) {
+		var rand : int;
+		rand = Random.Range(0,100);
+		
+		if(rand < chanceOfDisaster) {
+			Debug.Log("DISASTER");
+			Debug.Log(rand +  " " + chanceOfDisaster);
 			disasterSpawner.spawnRandomDisaster();
 		}
 	}
